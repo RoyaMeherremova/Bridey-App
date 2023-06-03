@@ -17,5 +17,6 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-//button click
+//blog
+
 

@@ -7,18 +7,7 @@
         align-items: center;
         position: relative;
 
-        .language-selector {
-            position: absolute;
-            right: 4%;
 
-            span {
-                font-size: 14px;
-            }
-
-            i {
-                font-size: 12px;
-            }
-        }
     }
 }
 
@@ -114,6 +103,12 @@
 }
 
 @font-face {
+    font-family: Qwitcher Grypen;
+    src: url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+}
+
+
+@font-face {
     font-family: WindSongt;
     src: url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 }
@@ -128,12 +123,18 @@
     src: url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 }
 
+@font-face {
+    font-family: Great Vibes;
+    src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+}
+
 #slider {
     padding-top: 2%;
 
-    // .swiper-pagination{
-    //     color: rgb(192, 133, 134);
-    // }
+    .swiper-pagination {
+        color: rgb(192, 133, 134);
+    }
+
     .swiper {
         width: 100%;
         height: 100%;
@@ -194,6 +195,10 @@
             .shop {
                 top: 68%;
                 left: 13%;
+            }
+
+            .shop-click {
+                transform: translateX();
             }
 
             .sale {
@@ -600,6 +605,175 @@
             position: relative;
             top: 35px;
             color: #ffff;
+        }
+    }
+}
+
+#latest-news {
+    padding-top: 9%;
+    padding-bottom: 4%;
+}
+
+#blogs {
+    .blog-content {
+        padding-left: 20px;
+    }
+
+    .blog {
+        position: relative;
+        width: 420px;
+        height: 419px;
+        border: 1px solid #dfd7d7;
+
+        .blogg {
+            color: #e9ac98;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 500;
+            position: absolute;
+            top: 8%;
+        }
+
+        .blog-date {
+            position: absolute;
+            top: 16%;
+
+            span {
+                font-size: 24px;
+                line-height: 30px;
+                text-transform: capitalize;
+                color: #000;
+                font-weight: 400;
+            }
+
+        }
+
+        .blog-title {
+            position: absolute;
+            top: 46%;
+
+            h4 {
+                color: #000000a3;
+                font-weight: bolder;
+            }
+        }
+
+        .read-more {
+            a {
+                text-decoration: none;
+                color: #e9ac98;
+                font-size: 19px;
+                font-weight: 500;
+                position: absolute;
+                bottom: 8%;
+
+                i {
+                    font-size: 14px;
+                    margin: 5px;
+                }
+            }
+        }
+
+        .blog-img {
+            width: 419px;
+            height: 0px;
+            position: absolute;
+            z-index: -11;
+            opacity: 0;
+            transition: 1s;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:hover {
+
+            .blog-img {
+                opacity: 1;
+                height: 419px;
+
+            }
+
+            .blogg {
+                color: #ffff;
+            }
+
+            .created {
+                color: #ffff;
+            }
+
+            .blog-title {
+                h4 {
+                    display: none;
+
+                }
+            }
+
+        }
+    }
+
+
+}
+
+#subscrive-header {
+    padding-top: 9%;
+    padding-bottom: 6%;
+
+    .subscrive-title {
+        text-align: center;
+        padding-top: 4%;
+        position: relative;
+        right: 2%;
+
+        h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 77px;
+            font-weight: 500;
+            color: #e9ac98;
+        }
+
+
+    }
+
+}
+
+#subscrive {
+    background: #e9ac98;
+
+    .left-side {
+        position: relative;
+        left: 28%;
+        bottom: 14%;
+        height: 180px;
+
+        h3 {
+            font-family: 'Qwitcher Grypen', cursive;
+            color: #fff;
+            opacity: .3;
+            font-size: 149px;
+        }
+
+        h4 {
+            position: absolute;
+            bottom: 14%;
+            left: 11%;
+            font-size: 26px;
+        }
+    }
+
+    .block-content {
+        input {
+            border: none;
+            color: #ffff;
+            background: 0 0;
+
+        &::placeholder{
+                color: #ffff;
+                opacity: .5;
+            }
+
         }
     }
 }

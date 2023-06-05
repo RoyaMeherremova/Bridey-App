@@ -1,0 +1,160 @@
+//home-for phone
+@media (min-width:0) and (max-width:850px) {
+
+    #nav-area {
+        border: none;
+
+        .contact {
+            display: none;
+
+        }
+
+        .left-area {
+            display: none;
+        }
+    }
+
+    #nav-down {
+        .top-menu {
+            display: none;
+        }
+    }
+
+    #responsive-nav-area {
+        display: block;
+        padding-top: 6%;
+
+        .hamburger {
+            position: relative;
+            left: 5%;
+        }
+
+        .left-area {
+            display: flex;
+            gap: 30px;
+            float: right;
+            position: relative;
+            bottom: 23px;
+            right: 13%;
+
+            i {
+                cursor: pointer;
+                font-size: 20px;
+
+            }
+
+            .icon {
+                color: #333;
+            }
+
+            .basket {
+                color: #e9ac98;
+            }
+        }
+    }
+
+    #slider {
+        .swiper-slide {
+            .slide {
+                .saleName {
+                    top: 24% !important;
+                    font-size: 10px !important;
+                }
+
+                .sale {
+                    top: 38% !important;
+                    font-size: 16px !important;
+                }
+
+                .caption-contain {
+                    font-size: 10px !important;
+
+                }
+
+                .shop {
+                    padding: 3px 5px 3px 5px !important;
+                    font-size: 5px !important;
+                    top: 72% !important;
+                }
+            }
+
+            .slide-2 {
+                .saleName {
+                    right: 26% !important;
+                }
+
+                .sale {
+                    right: 23% !important;
+                    top: 35% !important;
+                }
+
+                .shop {
+                    right: 27% !important;
+                }
+
+            }
+
+        }
+
+        .swiper {
+            &:hover {
+                .swiper-button-prev {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+
+                .swiper-button-next {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+        }
+    }
+
+    #introducing {
+        .intro-text {
+            text-align: center;
+
+            h4 {
+                font-size: 30px !important;
+            }
+
+            span {
+                font-size: 15px !important;
+                margin-left: 0% !important;
+                top: 15px !important;
+            }
+        }
+
+        .introducing-text {
+            padding: 13% !important;
+        }
+
+        .image {
+            width: 100% !important;
+
+            img {
+                width: 100% !important;
+
+            }
+        }
+
+        .apImage {
+            left: -25% !important;
+            bottom: 0% !important;
+            top: 5% !important;
+            padding-bottom: 18% !important;
+
+        }
+
+        .introducing-right {
+            margin-left: 0% !important;
+
+            .introducing-image {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}

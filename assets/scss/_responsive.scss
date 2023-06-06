@@ -109,11 +109,18 @@
                 }
             }
         }
+
+
+    }
+
+    .line {
+        display: none;
     }
 
     #introducing {
+
         .intro-text {
-            text-align: center;
+            text-align: center !important;
 
             h4 {
                 font-size: 30px !important;
@@ -155,6 +162,111 @@
                     width: 100% !important;
                 }
             }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .btn-about {
+            margin-top: 9px;
         }
     }
+
+    .header-background-content {
+        text-align: center !important;
+
+        h4 {
+            font-size: 30px !important;
+        }
+
+        span {
+            font-size: 15px !important;
+            margin-left: 0% !important;
+            top: 15px !important;
+        }
+    }
+
+    #featured-products {
+        padding-top: 28% !important;
+        padding-bottom: 14% !important;
+
+        .header-background {
+            position: relative;
+            right: 5% !important;
+        }
+
+    }
+
+    #about-us {
+        padding-top: 24% !important;
+
+        h4 {
+            font-size: 30px !important;
+        }
+
+        p {
+            font-size: 14px !important;
+
+        }
+
+        .btnn {
+            .btn-about {
+                top: 23px;
+                padding: 13px 20px 13px 20px;
+            }
+        }
+    }
+
+    #brides-header {
+        padding-top: 23% !important;
+        padding-bottom: 10% !important;
+    }
+
+    #block-carousel {
+        .slide {
+            .owl-item{
+                height: 422px;
+            }
+            .block-image {
+                padding-top: 0% !important;
+                justify-content: start;
+                position: relative;
+
+                img {
+                    width: 68px !important;
+                    height: 53px;
+                    position: absolute;
+                    bottom: 8px !important;
+                    left: 6% !important;
+                }
+            }
+
+            .descript {
+                position: relative;
+                width: 370px !important;
+                top: 9px !important;
+                padding-top: 0% !important;
+                right: 17% !important;
+                font-size: 18px !important;
+                line-height: 31px !important;
+            }
+            .title{
+                font-size: 14px;
+                left: 5%;
+                top: 71px;
+            }
+            .sub-title{
+                right: 36% !important;
+                font-size: 14px !important;
+                line-height: 30px;
+                top: 68px;
+            }
+           
+        }
+        .swiper-pagination{
+            bottom: 17% !important;
+        }
+    }
+
 }

@@ -516,11 +516,12 @@
 #about-us .about-us-right {
   margin-left: 28%;
 }
-#about-us .btn {
+#about-us .btnn {
   padding-top: 4%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 #about-us .btn-about {
   position: absolute;
@@ -1018,8 +1019,11 @@ img.rot {
     width: 40px !important;
     height: 40px !important;
   }
+  .line {
+    display: none;
+  }
   #introducing .intro-text {
-    text-align: center;
+    text-align: center !important;
   }
   #introducing .intro-text h4 {
     font-size: 30px !important;
@@ -1049,5 +1053,85 @@ img.rot {
   }
   #introducing .introducing-right .introducing-image img {
     width: 100% !important;
+  }
+  #introducing .introducing-right p {
+    font-size: 14px;
+  }
+  #introducing .btn-about {
+    margin-top: 9px;
+  }
+  .header-background-content {
+    text-align: center !important;
+  }
+  .header-background-content h4 {
+    font-size: 30px !important;
+  }
+  .header-background-content span {
+    font-size: 15px !important;
+    margin-left: 0% !important;
+    top: 15px !important;
+  }
+  #featured-products {
+    padding-top: 28% !important;
+    padding-bottom: 14% !important;
+  }
+  #featured-products .header-background {
+    position: relative;
+    right: 5% !important;
+  }
+  #about-us {
+    padding-top: 24% !important;
+  }
+  #about-us h4 {
+    font-size: 30px !important;
+  }
+  #about-us p {
+    font-size: 14px !important;
+  }
+  #about-us .btnn .btn-about {
+    top: 23px;
+    padding: 13px 20px 13px 20px;
+  }
+  #brides-header {
+    padding-top: 23% !important;
+    padding-bottom: 10% !important;
+  }
+  #block-carousel .slide .owl-item {
+    height: 422px;
+  }
+  #block-carousel .slide .block-image {
+    padding-top: 0% !important;
+    justify-content: start;
+    position: relative;
+  }
+  #block-carousel .slide .block-image img {
+    width: 68px !important;
+    height: 53px;
+    position: absolute;
+    bottom: 8px !important;
+    left: 6% !important;
+  }
+  #block-carousel .slide .descript {
+    position: relative;
+    width: 370px !important;
+    top: 9px !important;
+    padding-top: 0% !important;
+    right: 17% !important;
+    font-size: 18px !important;
+    line-height: 31px !important;
+  }
+  #block-carousel .slide .title {
+    font-size: 14px;
+    left: 5%;
+    top: 71px;
+  }
+  #block-carousel .slide .sub-title {
+    right: 36% !important;
+    font-size: 14px !important;
+    line-height: 30px;
+    top: 68px;
+  }
+  #block-carousel .swiper-pagination {
+    bottom: 17% !important;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -4,54 +4,11 @@
     #nav-area {
         border: none;
 
-        .contact {
-            display: none;
-
-        }
-
-        .left-area {
-            display: none;
+        .nav-container {
+            border: none;
         }
     }
 
-    #nav-down {
-        .top-menu {
-            display: none;
-        }
-    }
-
-    #responsive-nav-area {
-        display: block;
-        padding-top: 6%;
-
-        .hamburger {
-            position: relative;
-            left: 5%;
-        }
-
-        .left-area {
-            display: flex;
-            gap: 30px;
-            float: right;
-            position: relative;
-            bottom: 23px;
-            right: 13%;
-
-            i {
-                cursor: pointer;
-                font-size: 20px;
-
-            }
-
-            .icon {
-                color: #333;
-            }
-
-            .basket {
-                color: #e9ac98;
-            }
-        }
-    }
 
     #slider {
         .swiper-slide {
@@ -173,11 +130,20 @@
         }
     }
 
+    #products {
+        .cart {
+            .product-img {
+                width: 100%;
+            }
+        }
+
+    }
+
     .header-background-content {
         text-align: center !important;
 
         h4 {
-            font-size: 30px !important;
+            font-size: 35px !important;
         }
 
         span {
@@ -188,6 +154,7 @@
     }
 
     #featured-products {
+
         padding-top: 28% !important;
         padding-bottom: 14% !important;
 
@@ -218,16 +185,35 @@
         }
     }
 
+
     #brides-header {
+        .header-background-content {
+            text-align: center !important;
+
+            h4 {
+                font-size: 27px !important;
+            }
+
+            span {
+                font-size: 11px !important;
+                top: 9px !important;
+            }
+        }
+
         padding-top: 23% !important;
-        padding-bottom: 10% !important;
+        padding-bottom: 7% !important;
+    }
+
+    #latest-news {
+        padding-top: 15%;
     }
 
     #block-carousel {
         .slide {
-            .owl-item{
+            .owl-item {
                 height: 422px;
             }
+
             .block-image {
                 padding-top: 0% !important;
                 justify-content: start;
@@ -251,22 +237,311 @@
                 font-size: 18px !important;
                 line-height: 31px !important;
             }
-            .title{
+
+            .title {
                 font-size: 14px;
                 left: 5%;
                 top: 71px;
             }
-            .sub-title{
+
+            .sub-title {
                 right: 36% !important;
                 font-size: 14px !important;
                 line-height: 30px;
                 top: 68px;
             }
-           
+
         }
-        .swiper-pagination{
+
+        .swiper-pagination {
             bottom: 17% !important;
         }
+    }
+
+    #blogs {
+        padding-top: 15%;
+
+        .blog {
+            width: 100%;
+        }
+    }
+
+    #subscrive-header {
+        padding-bottom: 18%;
+
+        .subscrive-title {
+            h3 {
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    #subscrive {
+        height: 300px;
+
+        .left-side {
+            display: flex;
+            justify-content: center;
+            min-width: 330px;
+            left: 2%;
+
+            h3 {
+                position: relative;
+                font-size: 58px;
+                top: 13%;
+            }
+
+            h4 {
+                position: absolute;
+                left: 20%;
+                top: 96%;
+                font-weight: 600;
+                top: 90px;
+                font-size: 22px;
+                color: #000;
+
+            }
+        }
+
+        .block-content {
+            width: 100%;
+            top: 0px;
+            left: 0px;
+
+            .input-area {
+                input {
+                    padding-left: 9%;
+                    padding-bottom: 2%;
+                    width: 100%;
+                    border-bottom: 1px solid #fff;
+                    font-size: 14px;
+                }
+
+            }
+
+            button {
+                left: 0px;
+                width: 100%;
+                height: 55px;
+                padding-top: 4%;
+                border-bottom: 3px solid white;
+            }
+
+        }
+    }
+
+    #footer-top {
+        padding-top: 25%;
+    }
+
+    #footer {
+        .ApColumn {
+            text-align: center;
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        .logo {
+            border: none;
+            padding-top: 11%;
+        }
+
+        .block-information {
+            text-align: center;
+
+            .title_block {
+                font-size: 16px;
+                font-weight: 700;
+                padding-top: 10%;
+            }
+        }
+
+        .block-social {
+            justify-content: center;
+        }
+    }
+
+
+
+}
+
+//responsive for ipad
+@media (min-width:750px) and (max-width:1200px) {
+    #nav-area {
+        border: none;
+
+        .nav-container {
+            border: none;
+        }
+    }
+
+
+    #slider {
+        .mySwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .slide {
+                        .saleName {
+
+                            top: 24% !important;
+                            font-size: 40px !important;
+                        }
+
+                        .sale {
+                            top: 41% !important;
+                            font-size: 32px !important;
+                            left: 14%;
+                        }
+
+                        .caption-contain {
+                            font-size: 20px !important;
+                            left: 14%;
+
+                        }
+
+                        .shop {
+                            padding: 6px 7px 6px 7px !important;
+                            font-size: 6px !important;
+                            top: 72% !important;
+                            left: 14%;
+                        }
+                    }
+
+                    .slide-2 {
+                        .saleName {
+                            right: 26% !important;
+                        }
+
+                        .sale {
+                            right: 23% !important;
+                            top: 35% !important;
+                        }
+
+                        .shop {
+                            right: 27% !important;
+                        }
+
+                    }
+
+                }
+            }
+
+        }
+
+
+        .swiper {
+            &:hover {
+                .swiper-button-prev {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+
+                .swiper-button-next {
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+        }
+
+
+    }
+
+    #featured-products {
+        border-top: 1px solid #f3eeee;
+        margin-top: 11%;
+    padding-top: 8% !important;
+        padding-bottom: 6% !important;
+    }
+
+    #about-us {
+        padding-top: 13% !important;
+    }
+
+    #brides-header {
+        padding-top: 14% !important;
+        padding-bottom: 4% !important;
+
+    }
+
+    #block-carousel {
+        .slide {
+            .slider-content {
+                left: 38%;
+                top: 23%;
+            }
+        }
+
+    }
+
+    #blogs {
+        padding-top: 5%;
+
+        .blog {
+            width: 97%;
+        }
+    }
+
+    #subscrive-header {
+        padding-bottom: 10%;
+        .header-background-content {
+            h4 {
+                font-size: 42px !important;
+            }
+
+            span {
+                font-size: 18px !important;
+                margin-left: 0% !important;
+                top: 1px !important;
+            }
+
+        }
+
+        .subscrive-title {
+            padding-top: 2%;
+
+            h3 {
+                font-size: 53px;
+            }
+        }
+    }
+
+    #subscrive {
+        height: 100%;
+
+        .left-side{
+            h3{
+                top: 24%;
+            }
+            h4{
+                top: 108px;
+            }
+        }
+
+        .block-content {
+            top: 37px;
+
+            .input-area {
+                position: absolute;
+                top: 26px;
+            }
+
+            button {
+                height: 55px;
+                left: 178px;
+                width: 47%;
+                padding-top: 7%;
+            }
+        }
+
+
+    }
+
+
+    #footer-top{
+        padding-top: 12%;
     }
 
 }

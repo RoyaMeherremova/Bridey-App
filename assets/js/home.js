@@ -19,36 +19,43 @@ var swiper = new Swiper(".mySwiper", {
 
 
 //blog-cards-slider
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        950: {
-            slidesPerView: 3,
-        },
-    },
+$('.blog-slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    
+    ]
   });
 
-
-
-
+  $( document ).ready(function() {
+    $(".hamburger").on("click",function(){
+      $("#overlay").removeClass("d-none");
+      $(".side-bar").removeClass("d-none")
+    })
+});

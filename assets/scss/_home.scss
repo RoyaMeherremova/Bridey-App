@@ -85,6 +85,10 @@
             color: #e9ac98;
         }
     }
+
+
+
+
 }
 
 #nav-down {
@@ -124,6 +128,81 @@
     }
 }
 
+.side-bar {
+    width: 235px;
+    background-color: white;
+    height: 100vh;
+    top: 0;
+    position: absolute;
+    z-index: 5;
+
+    span {
+        position: relative;
+        left: 77%;
+        top: 1%;
+        color: #000;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 !important;
+        line-height: 52px;
+        li{
+            border-bottom: 1px solid #eaeaea;
+            padding-left: 4%;
+            color: #000;
+        }
+        .activ{
+            color: #e9ac98;
+
+        }
+    }
+}
+#overlay {
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 2; 
+    cursor: pointer; 
+  }
+
+#responsive-nav-area {
+    display: block;
+    padding-top: 6%;
+
+    .hamburger {
+        position: relative;
+        left: 5%;
+    }
+
+    .left-area {
+        display: flex;
+        gap: 30px;
+        float: right;
+        position: relative;
+        right: 13%;
+
+        i {
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+
+        .icon {
+            color: #333;
+        }
+
+        .basket {
+            color: #e9ac98;
+        }
+    }
+}
+
 @font-face {
     font-family: Marck Script;
     src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
@@ -153,9 +232,6 @@
 @font-face {
     font-family: Great Vibes;
     src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-}
-#responsive-nav-area{
-    display: none;
 }
 
 #slider {
@@ -205,16 +281,14 @@
                     font-weight: 600;
                     position: relative;
                     top: 35%;
+                    color: #e9ac98;
                 }
 
-                &:hover {
-                    background: #e9ac98;
-                    color: #fff;
-                }
 
             }
 
             .swiper-button-next {
+
                 width: 50px;
                 height: 50px;
                 display: block;
@@ -233,10 +307,7 @@
                     top: 35%;
                 }
 
-                &:hover {
-                    background: #e9ac98;
-                    color: #fff;
-                }
+
             }
         }
     }
@@ -867,8 +938,10 @@
             top: 46%;
 
             h4 {
-                color: #000000a3;
                 font-weight: bolder;
+                position: relative;
+                top: 66px;
+                color: #000;
             }
         }
 
@@ -876,7 +949,7 @@
             a {
                 text-decoration: none;
                 color: #e9ac98;
-                font-size: 19px;
+                font-size: 14px;
                 font-weight: 500;
                 position: absolute;
                 bottom: 8%;
@@ -889,12 +962,12 @@
         }
 
         .blog-img {
-            width: 419px;
+            width: 100%;
             height: 0px;
             position: absolute;
             z-index: -11;
             opacity: 0;
-            transition: 1s;
+            transition: 0.3s;
 
             img {
                 width: 100%;
@@ -920,7 +993,8 @@
 
             .blog-title {
                 h4 {
-                    display: none;
+
+                    color: #ffff;
 
                 }
             }
@@ -1214,9 +1288,4 @@ img.rot {
     100% {
         transform: rotate(360deg);
     }
-}
-
-
-@media (min-width:851) and (max-width:1200px) {
-    // ipad
 }

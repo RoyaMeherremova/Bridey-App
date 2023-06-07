@@ -93,6 +93,73 @@
   color: #e9ac98;
 }
 
+.side-bar {
+  width: 235px;
+  background-color: white;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: 5;
+}
+.side-bar span {
+  position: relative;
+  left: 77%;
+  top: 1%;
+  color: #000;
+}
+.side-bar ul {
+  list-style: none;
+  padding: 0 !important;
+  line-height: 52px;
+}
+.side-bar ul li {
+  border-bottom: 1px solid #eaeaea;
+  padding-left: 4%;
+  color: #000;
+}
+.side-bar ul .activ {
+  color: #e9ac98;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#responsive-nav-area {
+  display: block;
+  padding-top: 6%;
+}
+#responsive-nav-area .hamburger {
+  position: relative;
+  left: 5%;
+}
+#responsive-nav-area .left-area {
+  display: flex;
+  gap: 30px;
+  float: right;
+  position: relative;
+  right: 13%;
+}
+#responsive-nav-area .left-area i {
+  cursor: pointer;
+  font-size: 20px;
+}
+#responsive-nav-area .left-area .icon {
+  color: #333;
+}
+#responsive-nav-area .left-area .basket {
+  color: #e9ac98;
+}
+
 @font-face {
   font-family: Marck Script;
   src: url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
@@ -117,10 +184,6 @@
   font-family: Great Vibes;
   src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 }
-#responsive-nav-area {
-  display: none;
-}
-
 #slider {
   padding-top: 2%;
 }
@@ -159,10 +222,7 @@
   font-weight: 600;
   position: relative;
   top: 35%;
-}
-#slider .swiper:hover .swiper-button-prev:hover {
-  background: #e9ac98;
-  color: #fff;
+  color: #e9ac98;
 }
 #slider .swiper:hover .swiper-button-next {
   width: 50px;
@@ -181,10 +241,6 @@
   font-weight: 600;
   position: relative;
   top: 35%;
-}
-#slider .swiper:hover .swiper-button-next:hover {
-  background: #e9ac98;
-  color: #fff;
 }
 #slider .swiper-slide {
   text-align: center;
@@ -676,13 +732,15 @@
   top: 46%;
 }
 #blogs .blog .blog-title h4 {
-  color: rgba(0, 0, 0, 0.6392156863);
   font-weight: bolder;
+  position: relative;
+  top: 66px;
+  color: #000;
 }
 #blogs .blog .read-more a {
   text-decoration: none;
   color: #e9ac98;
-  font-size: 19px;
+  font-size: 14px;
   font-weight: 500;
   position: absolute;
   bottom: 8%;
@@ -692,12 +750,12 @@
   margin: 5px;
 }
 #blogs .blog .blog-img {
-  width: 419px;
+  width: 100%;
   height: 0px;
   position: absolute;
   z-index: -11;
   opacity: 0;
-  transition: 1s;
+  transition: 0.3s;
 }
 #blogs .blog .blog-img img {
   width: 100%;
@@ -714,7 +772,7 @@
   color: white;
 }
 #blogs .blog:hover .blog-title h4 {
-  display: none;
+  color: white;
 }
 
 #subscrive-header {
@@ -950,40 +1008,8 @@ img.rot {
   #nav-area {
     border: none;
   }
-  #nav-area .contact {
-    display: none;
-  }
-  #nav-area .left-area {
-    display: none;
-  }
-  #nav-down .top-menu {
-    display: none;
-  }
-  #responsive-nav-area {
-    display: block;
-    padding-top: 6%;
-  }
-  #responsive-nav-area .hamburger {
-    position: relative;
-    left: 5%;
-  }
-  #responsive-nav-area .left-area {
-    display: flex;
-    gap: 30px;
-    float: right;
-    position: relative;
-    bottom: 23px;
-    right: 13%;
-  }
-  #responsive-nav-area .left-area i {
-    cursor: pointer;
-    font-size: 20px;
-  }
-  #responsive-nav-area .left-area .icon {
-    color: #333;
-  }
-  #responsive-nav-area .left-area .basket {
-    color: #e9ac98;
+  #nav-area .nav-container {
+    border: none;
   }
   #slider .swiper-slide .slide .saleName {
     top: 24% !important;
@@ -1060,11 +1086,14 @@ img.rot {
   #introducing .btn-about {
     margin-top: 9px;
   }
+  #products .cart .product-img {
+    width: 100%;
+  }
   .header-background-content {
     text-align: center !important;
   }
   .header-background-content h4 {
-    font-size: 30px !important;
+    font-size: 35px !important;
   }
   .header-background-content span {
     font-size: 15px !important;
@@ -1094,7 +1123,20 @@ img.rot {
   }
   #brides-header {
     padding-top: 23% !important;
-    padding-bottom: 10% !important;
+    padding-bottom: 7% !important;
+  }
+  #brides-header .header-background-content {
+    text-align: center !important;
+  }
+  #brides-header .header-background-content h4 {
+    font-size: 27px !important;
+  }
+  #brides-header .header-background-content span {
+    font-size: 11px !important;
+    top: 9px !important;
+  }
+  #latest-news {
+    padding-top: 15%;
   }
   #block-carousel .slide .owl-item {
     height: 422px;
@@ -1133,5 +1175,193 @@ img.rot {
   }
   #block-carousel .swiper-pagination {
     bottom: 17% !important;
+  }
+  #blogs {
+    padding-top: 15%;
+  }
+  #blogs .blog {
+    width: 100%;
+  }
+  #subscrive-header {
+    padding-bottom: 18%;
+  }
+  #subscrive-header .subscrive-title h3 {
+    font-size: 40px;
+  }
+  #subscrive {
+    height: 300px;
+  }
+  #subscrive .left-side {
+    display: flex;
+    justify-content: center;
+    min-width: 330px;
+    left: 2%;
+  }
+  #subscrive .left-side h3 {
+    position: relative;
+    font-size: 58px;
+    top: 13%;
+  }
+  #subscrive .left-side h4 {
+    position: absolute;
+    left: 20%;
+    top: 96%;
+    font-weight: 600;
+    top: 90px;
+    font-size: 22px;
+    color: #000;
+  }
+  #subscrive .block-content {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+  #subscrive .block-content .input-area input {
+    padding-left: 9%;
+    padding-bottom: 2%;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+  }
+  #subscrive .block-content button {
+    left: 0px;
+    width: 100%;
+    height: 55px;
+    padding-top: 4%;
+    border-bottom: 3px solid white;
+  }
+  #footer-top {
+    padding-top: 25%;
+  }
+  #footer .ApColumn {
+    text-align: center;
+  }
+  #footer .ApColumn ul {
+    padding: 0;
+  }
+  #footer .logo {
+    border: none;
+    padding-top: 11%;
+  }
+  #footer .block-information {
+    text-align: center;
+  }
+  #footer .block-information .title_block {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 10%;
+  }
+  #footer .block-social {
+    justify-content: center;
+  }
+}
+@media (min-width: 750px) and (max-width: 1200px) {
+  #nav-area {
+    border: none;
+  }
+  #nav-area .nav-container {
+    border: none;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide .saleName {
+    top: 24% !important;
+    font-size: 40px !important;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide .sale {
+    top: 41% !important;
+    font-size: 32px !important;
+    left: 14%;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide .caption-contain {
+    font-size: 20px !important;
+    left: 14%;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide .shop {
+    padding: 6px 7px 6px 7px !important;
+    font-size: 6px !important;
+    top: 72% !important;
+    left: 14%;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide-2 .saleName {
+    right: 26% !important;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide-2 .sale {
+    right: 23% !important;
+    top: 35% !important;
+  }
+  #slider .mySwiper .swiper-wrapper .swiper-slide .slide-2 .shop {
+    right: 27% !important;
+  }
+  #slider .swiper:hover .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #slider .swiper:hover .swiper-button-next {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  #featured-products {
+    border-top: 1px solid #f3eeee;
+    margin-top: 11%;
+    padding-top: 8% !important;
+    padding-bottom: 6% !important;
+  }
+  #about-us {
+    padding-top: 13% !important;
+  }
+  #brides-header {
+    padding-top: 14% !important;
+    padding-bottom: 4% !important;
+  }
+  #block-carousel .slide .slider-content {
+    left: 38%;
+    top: 23%;
+  }
+  #blogs {
+    padding-top: 5%;
+  }
+  #blogs .blog {
+    width: 97%;
+  }
+  #subscrive-header {
+    padding-bottom: 10%;
+  }
+  #subscrive-header .header-background-content h4 {
+    font-size: 42px !important;
+  }
+  #subscrive-header .header-background-content span {
+    font-size: 18px !important;
+    margin-left: 0% !important;
+    top: 1px !important;
+  }
+  #subscrive-header .subscrive-title {
+    padding-top: 2%;
+  }
+  #subscrive-header .subscrive-title h3 {
+    font-size: 53px;
+  }
+  #subscrive {
+    height: 100%;
+  }
+  #subscrive .left-side h3 {
+    top: 24%;
+  }
+  #subscrive .left-side h4 {
+    top: 108px;
+  }
+  #subscrive .block-content {
+    top: 37px;
+  }
+  #subscrive .block-content .input-area {
+    position: absolute;
+    top: 26px;
+  }
+  #subscrive .block-content button {
+    height: 55px;
+    left: 178px;
+    width: 47%;
+    padding-top: 7%;
+  }
+  #footer-top {
+    padding-top: 12%;
   }
 }/*# sourceMappingURL=style.css.map */

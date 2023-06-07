@@ -264,6 +264,11 @@
         .blog {
             width: 100%;
         }
+
+    }
+
+    .slick-dots {
+        width: 95% !important;
     }
 
     #subscrive-header {
@@ -452,7 +457,7 @@
     #featured-products {
         border-top: 1px solid #f3eeee;
         margin-top: 11%;
-    padding-top: 8% !important;
+        padding-top: 8% !important;
         padding-bottom: 6% !important;
     }
 
@@ -486,6 +491,7 @@
 
     #subscrive-header {
         padding-bottom: 10%;
+
         .header-background-content {
             h4 {
                 font-size: 42px !important;
@@ -511,11 +517,12 @@
     #subscrive {
         height: 100%;
 
-        .left-side{
-            h3{
+        .left-side {
+            h3 {
                 top: 24%;
             }
-            h4{
+
+            h4 {
                 top: 108px;
             }
         }
@@ -540,7 +547,7 @@
     }
 
 
-    #footer-top{
+    #footer-top {
         padding-top: 12%;
     }
 

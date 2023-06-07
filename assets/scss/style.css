@@ -34,6 +34,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  margin-right: 57%;
 }
 #nav-area .contact i {
   font-size: 30px;
@@ -75,6 +76,7 @@
 #nav-down .top-menu a {
   list-style: none;
   position: relative;
+  color: #4F4F4F;
 }
 #nav-down .top-menu a li {
   display: inline;
@@ -100,6 +102,9 @@
   top: 0;
   position: absolute;
   z-index: 5;
+  transform: translateX(-239px);
+  transition: 0.4s;
+  position: fixed;
 }
 .side-bar span {
   position: relative;
@@ -390,6 +395,7 @@
   align-items: center;
   gap: 17px;
   color: #58525e;
+  border-radius: 7px;
   font-family: Roboto, Helvetica Neue, sans-serif;
   text-decoration: none;
   border: 1px solid #58525e;
@@ -420,7 +426,7 @@
   position: absolute;
   transition: all 0.2s ease-out;
   left: 10%;
-  bottom: 39%;
+  bottom: 37%;
   font-size: 13px;
 }
 
@@ -511,6 +517,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  border-radius: 7px;
   gap: 17px;
   color: #58525e;
   font-family: Roboto, Helvetica Neue, sans-serif;
@@ -593,6 +600,26 @@
   color: #58525e;
   border-radius: 7px;
   font-weight: 500;
+  display: block;
+  background: linear-gradient(to right, #e9ac98 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+#about-us .btn-about i {
+  position: relative;
+  left: 7%;
+}
+#about-us .btn-about:hover {
+  background-position: left bottom;
+  border: none;
+  text-align: right;
+}
+#about-us .btn-about:hover i {
+  position: absolute;
+  left: 8%;
+  top: 22px;
+  transition: all 0.5s ease-out;
 }
 
 #brides-header {
@@ -755,7 +782,7 @@
   position: absolute;
   z-index: -11;
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 #blogs .blog .blog-img img {
   width: 100%;
@@ -1004,6 +1031,90 @@ img.rot {
     transform: rotate(360deg);
   }
 }
+#wrapper .page_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+}
+#wrapper .page_text h1 {
+  text-transform: uppercase;
+  color: #3e3d3d;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+#wrapper .page_text ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px !important;
+}
+#wrapper .page_text ul li {
+  font-size: 14px;
+  margin: 4px;
+  margin: 0 !important;
+}
+#wrapper .page_text ul a {
+  color: #9faaa7;
+}
+#wrapper .page_text ul i {
+  position: relative;
+  font-size: 11px;
+  bottom: 1px;
+}
+
+#story-content {
+  padding-top: 10%;
+}
+#story-content .block-ApImage {
+  width: 80%;
+  height: 96%;
+  margin-left: 3%;
+}
+#story-content .block-ApImage img {
+  width: 100%;
+  height: 100%;
+}
+#story-content .content-text {
+  text-align: center;
+  margin-right: 15%;
+  position: relative;
+  top: 7%;
+}
+#story-content .content-text .intro-text h4 {
+  font-family: "WindSong", cursive;
+  font-size: 60px;
+  color: #213e36;
+}
+#story-content .content-text .intro-text span {
+  font-size: 16px;
+  color: #9faaa7;
+  margin-left: 58px;
+  position: relative;
+  top: 23px;
+}
+#story-content .text-about {
+  position: relative;
+  top: 18%;
+  left: 7%;
+  padding: 0% 14% 0% 6%;
+}
+#story-content .text-about p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4b5955;
+  text-align: justify;
+}
+#story-content .image-form {
+  position: relative;
+  top: 22%;
+}
+#story-content .image-form img {
+  width: 97%;
+  height: 94%;
+}
+
 @media (min-width: 0) and (max-width: 850px) {
   #nav-area {
     border: none;
@@ -1181,6 +1292,9 @@ img.rot {
   }
   #blogs .blog {
     width: 100%;
+  }
+  .slick-dots {
+    width: 95% !important;
   }
   #subscrive-header {
     padding-bottom: 18%;

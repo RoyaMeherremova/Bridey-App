@@ -1069,7 +1069,7 @@ img.rot {
 }
 #story-content .block-ApImage {
   width: 80%;
-  height: 96%;
+  height: 100%;
   margin-left: 3%;
 }
 #story-content .block-ApImage img {
@@ -1080,23 +1080,16 @@ img.rot {
   text-align: center;
   margin-right: 15%;
   position: relative;
-  top: 7%;
+  top: 5%;
 }
 #story-content .content-text .intro-text h4 {
   font-family: "WindSong", cursive;
   font-size: 60px;
   color: #213e36;
 }
-#story-content .content-text .intro-text span {
-  font-size: 16px;
-  color: #9faaa7;
-  margin-left: 58px;
-  position: relative;
-  top: 23px;
-}
 #story-content .text-about {
   position: relative;
-  top: 18%;
+  top: 22px;
   left: 7%;
   padding: 0% 14% 0% 6%;
 }
@@ -1108,11 +1101,178 @@ img.rot {
 }
 #story-content .image-form {
   position: relative;
-  top: 22%;
+  top: 41px;
 }
 #story-content .image-form img {
   width: 97%;
   height: 94%;
+}
+#story-content .container-about {
+  height: 782px;
+}
+
+.btn-hov {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 17px;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  text-decoration: none;
+  border: 1px solid #58525e;
+  font-size: 11px;
+  height: 56px;
+  width: 148px;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+  background: linear-gradient(to right, #e9ac98 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+}
+.btn-hov i {
+  position: relative;
+  left: 7%;
+}
+
+#our-contact {
+  padding-top: 7%;
+}
+#our-contact .blok-ApRawHtml {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+#our-contact .blok-ApRawHtml .contact-area {
+  text-align: center;
+  width: 630px;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+#our-contact .blok-ApRawHtml .contact-area a {
+  left: 39%;
+  padding: 11px 12px 17px 17px;
+}
+#our-contact .blok-ApRawHtml .contact-area a:hover {
+  color: #000;
+  padding: 11px 35px 17px 17px;
+  background-position: left bottom;
+  border: none;
+  text-align: right;
+}
+#our-contact .blok-ApRawHtml .contact-area a:hover i {
+  position: absolute;
+  left: 20%;
+  top: 24px;
+  transition: all 0.5s ease-out;
+}
+
+#title_block .sub-title {
+  text-align: center;
+  padding-top: 8%;
+}
+#title_block .sub-title h4 {
+  text-align: center;
+  font-family: "Alex Brush", cursive;
+  font-size: 81px;
+  font-weight: 500;
+  color: #213e36;
+}
+#title_block .sub-title span {
+  font-size: 16px;
+  color: #9faaa7;
+}
+
+#about-box {
+  padding-top: 6%;
+}
+#about-box .about-item .top {
+  align-items: center;
+}
+#about-box .about-item .top .icon {
+  width: 37px;
+  height: 37px;
+}
+#about-box .about-item .top .icon img {
+  width: 100%;
+  height: 100%;
+}
+#about-box .about-item .top .title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  padding-left: 20px;
+  width: 147px;
+}
+#about-box .about-item p {
+  margin-top: 36px;
+  margin-bottom: 54px;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4b5955;
+}
+#about-box .about-item a {
+  padding: 20px 12px 17px 17px;
+}
+#about-box .about-item a:hover {
+  color: #000;
+  padding: 23px 35px 17px 17px;
+  background-position: left bottom;
+  border: none;
+  text-align: right;
+}
+#about-box .about-item a:hover i {
+  position: absolute;
+  left: 20%;
+  top: 26px;
+  transition: all 0.5s ease-out;
+}
+#about-box .about-item .our-btn {
+  padding: 20px 23px 17px 20px;
+}
+#about-box .about-item .our-btn:hover {
+  padding: 23px 12px 17px 0px;
+}
+#about-box .about-item .our-btn:hover i {
+  left: 15%;
+}
+#about-box .about-item .our-bt {
+  padding: 21px 11px 17px 0px;
+}
+#about-box .about-item .our-bt:hover {
+  padding: 22px 17px 17px 17px;
+}
+#about-box .about-item .our-bt:hover i {
+  left: 23%;
+  top: 24px;
+}
+#about-box .about-item .about-cont {
+  margin-bottom: 80px;
+}
+
+#block-carousel {
+  margin-top: 3%;
+}
+#block-carousel .mySwiper .slide .slide-color {
+  color: #000;
+}
+#block-carousel .mySwiper .slide-cont {
+  top: 15%;
+}
+#block-carousel .about-pagination {
+  bottom: 110px;
+}
+#block-carousel .about-pagination span {
+  background-color: #666;
 }
 
 @media (min-width: 0) and (max-width: 850px) {

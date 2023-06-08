@@ -77,6 +77,8 @@
   list-style: none;
   position: relative;
   color: #4F4F4F;
+  text-decoration: none;
+  cursor: pointer;
 }
 #nav-down .top-menu a li {
   display: inline;
@@ -1049,13 +1051,18 @@ img.rot {
   display: flex;
   align-items: center;
   padding: 0px !important;
+  gap: 4px;
 }
 #wrapper .page_text ul li {
   font-size: 14px;
   margin: 4px;
   margin: 0 !important;
 }
+#wrapper .page_text ul li span {
+  color: #666;
+}
 #wrapper .page_text ul a {
+  text-decoration: none;
   color: #9faaa7;
 }
 #wrapper .page_text ul i {
@@ -1065,7 +1072,7 @@ img.rot {
 }
 
 #story-content {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 #story-content .block-ApImage {
   width: 80%;
@@ -1273,6 +1280,203 @@ img.rot {
 }
 #block-carousel .about-pagination span {
   background-color: #666;
+}
+
+#blogss {
+  padding-top: 4%;
+}
+#blogss .container-blogs {
+  max-width: 94% !important;
+}
+#blogss .blog-cart {
+  margin-bottom: 10%;
+}
+#blogss .blog-cart .post-thumb {
+  cursor: pointer;
+}
+#blogss .blog-cart .post-thumb img {
+  width: 100%;
+  height: 446px;
+}
+#blogss .blog-cart .post-info h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: Nunito;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #aaa;
+}
+#blogss .blog-cart .post-info h3 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: 0.1s;
+}
+#blogss .blog-cart .post-info h3:hover {
+  background-position: bottom;
+  color: #d16d4b;
+}
+#blogss .blog-cart .post-info p {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 400;
+  color: #a8a8a8;
+  margin-top: 22px;
+  text-align: justify;
+}
+#blogss .blog-cart .post-info a span {
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 16px;
+}
+#blogss .blog-cart .post-info a span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#blogss .blog-cart .post-info a span:hover {
+  color: #d16d4b;
+}
+#blogss .blog-cart .post-info a span:hover::after {
+  background: #d16d4b;
+}
+#blogss .container-blog {
+  gap: 26px;
+}
+#blogss .widget {
+  margin-left: 6%;
+  width: 100%;
+}
+#blogss .widget .widget-title {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+  position: relative;
+  border-bottom: 1px solid #e7e7e7;
+}
+#blogss .wg-search-form {
+  position: relative;
+  margin-bottom: 8%;
+}
+#blogss .wg-search-form input {
+  position: relative;
+  left: 6%;
+  width: 100%;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 16px 30px;
+  color: #a8a8a8;
+}
+#blogss .wg-search-form button {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  height: 56px;
+  width: 85px;
+  text-align: center;
+  background: black;
+  border: none;
+  left: 81%;
+}
+#blogss .wg-search-form button i {
+  color: #fff;
+  line-height: 56px;
+  font-size: 22px;
+}
+#blogss .widget-content {
+  margin-left: 6%;
+}
+#blogss .widget-content ul {
+  padding: 0px !important;
+  list-style: none;
+}
+#blogss .widget-content ul li {
+  cursor: pointer;
+  padding: 8px 0;
+}
+#blogss .widget-content ul li a:hover {
+  color: #e9ac98;
+}
+#blogss .list-posts {
+  position: relative;
+  left: 6%;
+}
+#blogss .list-posts .item-post {
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 6%;
+  padding-bottom: 3%;
+}
+#blogss .list-posts .item-post .post-thumb {
+  width: 80px;
+  height: 80px;
+}
+#blogss .list-posts .item-post .post-thumb img {
+  width: 100%;
+  height: 100%;
+}
+#blogss .list-posts .item-post .post-info {
+  margin-left: 4%;
+}
+#blogss .list-posts .item-post .post-info h3 {
+  line-height: 0;
+  padding-bottom: 3px;
+  margin-top: 7px;
+}
+#blogss .list-posts .item-post .post-info span {
+  font-family: Nunito;
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#blogss .list-posts .item-post .post-info .date-post {
+  padding-bottom: 5px !important;
+}
+#blogss .list-posts .item-post .post-info a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  padding-bottom: 3px;
+}
+#blogss .list-posts .item-post .post-info a:hover {
+  color: #e9ac98;
+}
+#blogss .widget-sizes {
+  margin-left: 21px;
+}
+#blogss .widget-sizes ul {
+  list-style: none;
+  padding: 0px !important;
+}
+#blogss .widget-sizes ul li {
+  margin-bottom: 9px;
+  border: 1px solid;
+  width: 37px;
+  height: 38px;
+}
+#blogss .widget-sizes ul li a {
+  text-decoration: none;
+  position: relative;
+  top: 5px;
+  left: 10px;
+  color: inherit;
+}
+#blogss .widget-sizes ul li:hover {
+  background-color: #e9ac98;
+  border-color: #e9ac98;
+}
+#blogss .widget-sizes ul li:hover a {
+  color: white;
 }
 
 @media (min-width: 0) and (max-width: 850px) {

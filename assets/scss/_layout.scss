@@ -66,7 +66,7 @@
         }
     }
 
-    .left-area {
+    .right-area {
         display: flex;
         gap: 30px;
         float: right;
@@ -83,7 +83,10 @@
         }
 
         .basket {
-            color: #e9ac98;
+            a{
+                color: #e9ac98;  
+            }
+          
         }
     }
 
@@ -196,7 +199,7 @@
         left: 5%;
     }
 
-    .left-area {
+    .right-area {
         display: flex;
         gap: 30px;
         float: right;

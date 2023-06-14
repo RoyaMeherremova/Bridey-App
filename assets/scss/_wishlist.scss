@@ -1,9 +1,10 @@
-#basket-table {
-    .table-area{
-             box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .1), 0 1px 1px 0 transparent, 0 1px 3px 0 rgba(0, 0, 0, .12) !important; 
-             border-radius: 4px;
-             padding-bottom: 32px;
+#wishlist-table {
+    .table-area {
+        box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .1), 0 1px 1px 0 transparent, 0 1px 3px 0 rgba(0, 0, 0, .12) !important;
+        border-radius: 4px;
+        padding-bottom: 32px;
     }
+
     .table-products {
         margin-top: 53px;
         background: #fff;
@@ -69,16 +70,6 @@
                 }
             }
 
-            &:nth-child(6) {
-                padding-top: 55px;
-                cursor: pointer;
-            }
-
-            &:nth-child(5) {
-                padding-top: 55px;
-
-            }
-
             a {
                 color: rgba(0, 0, 0, .87);
                 font-size: 1rem;
@@ -90,18 +81,8 @@
             img {
                 width: 135px;
                 height: 133px;
-                margin-right: 2px;
             }
 
-
-            input {
-                width: 80px;
-                text-align: center;
-                background-color: #eee;
-                height: 35px;
-                border: 1px solid #e5e5e5;
-                color: rgba(0, 0, 0, .54);
-            }
         }
 
         .price {
@@ -117,6 +98,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .shop {
             margin-left: 64px;
             margin-top: 2px;
@@ -132,12 +114,15 @@
                 text-decoration: none;
             }
         }
-    
-        .total-price{
+
+        .total-price {
             font-weight: 500;
             font-size: 17px;
-            margin-right: 44px;
+            margin-right: 90px;
         }
+
+
+
     }
 
 }

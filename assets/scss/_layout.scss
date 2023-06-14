@@ -83,17 +83,42 @@
         }
 
         .basket {
-            a{
-                color: #e9ac98;  
+            a {
+                color: #e9ac98;
             }
-          
+
+        }
+
+    
+    }
+    .login-register {
+        position: absolute;
+        right: 9%;
+        top: 18%;
+        width: 140px;
+        height: 59px;
+        border: 1px solid #eaeaea;
+        background: #fff;
+        ul {
+            padding: 0px;
+            li {
+                margin-left: 7px;
+                list-style: none;
+                a{
+                    color: #666;
+                    font-size: 15px;
+                }
+            }
+
+
         }
     }
-
-
-
-
 }
+
+
+
+
+
 
 #nav-down {
     .top-menu {
@@ -111,7 +136,7 @@
             cursor: pointer;
 
             li {
-               
+
                 display: inline;
                 margin: 3px;
                 font-weight: 600 !important;

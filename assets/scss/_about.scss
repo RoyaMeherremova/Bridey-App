@@ -1,11 +1,14 @@
 #wrapper {
-    margin-top: 3%;
+    margin-top: 2%;
+
     .page_text {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         height: 300px;
+        width: 406px;
+    text-align: center;
 
         h1 {
             text-transform: uppercase;
@@ -13,6 +16,7 @@
             font-weight: 600;
             font-size: 1.375rem;
             font-family: auto;
+            
         }
 
         ul {
@@ -26,7 +30,8 @@
                 font-size: 14px;
                 margin: 4px;
                 margin: 0 !important;
-                span{
+
+                span {
                     color: #666;
                 }
             }
@@ -188,17 +193,20 @@
         text-align: center;
         padding-top: 8%;
 
-        h4 {
-            text-align: center;
-            font-family: "Alex Brush", cursive;
-            font-size: 81px;
-            font-weight: 500;
-            color: #213e36;
+        h2 {
+            font-size: 50px;
+            font-family: 'Marcellus';
+            font-weight: 400;
         }
 
-        span {
-            font-size: 16px;
-            color: #9faaa7;
+        img {
+            margin-top: 9px;
+        }
+        p {
+            color: #e9ac98 !important;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
     }
 
@@ -284,7 +292,8 @@
                 }
             }
         }
-        .about-cont{
+
+        .about-cont {
             margin-bottom: 80px;
         }
     }
@@ -301,18 +310,57 @@
                 color: #000;
             }
         }
-        .slide-cont{
+
+        .slide-cont {
             top: 15%;
         }
     }
-    .about-pagination{
+
+    .about-pagination {
         bottom: 110px;
-        span{
+
+        span {
             background-color: #666;
-            
+
         }
     }
-   
 
 
+
+}
+
+#footer-top-about {
+    border: 1px solid #EDEDED;
+    background-color: white;
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+    .service-item {
+        text-align: center;
+
+        img {
+            display: block;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+
+        .title {
+            color: #000;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 1%;
+            font-size: 14px;
+            color: #4b5955;
+        }
+
+    }
+}
+
+@font-face {
+    font-family: Marcellus;
+    src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 }

@@ -43,11 +43,10 @@
                 text-transform: uppercase;
                 font-weight: 600 !important;
                 letter-spacing: .05em;
-                font-size: 34px;
-                font-family: "Playball", cursive;
-                font-size: 49px;
-                font-weight: 500;
-                color: #3a504a;
+                color: #333;
+                font-size: 50px;
+                font-family: 'Marcellus';
+                font-weight: 400;
             }
         }
 
@@ -101,3 +100,8 @@
 
     }
 }
+@font-face {
+    font-family: Marcellus;
+    src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+}
+

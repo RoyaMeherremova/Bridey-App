@@ -996,6 +996,35 @@
     }
 
 }
+#footer-top {
+    background-color: #f9f9f5;
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+    .service-item {
+        text-align: center;
+
+        img {
+            display: block;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+
+        .title {
+            color: #000;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 1%;
+            font-size: 14px;
+            color: #4b5955;
+        }
+
+    }
+}
 
 
 img.rot {

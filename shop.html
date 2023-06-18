@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/style.css">
     <title>Shop</title>
 </head>
@@ -21,40 +22,6 @@
     <!-- Start Header -->
     <header>
         <div id="overlay" class="d-none"></div>
-        <section id="nav-up">
-            <div class="nav-container">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="flag-united-kingdom flag m-0"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="Dropdown">
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i
-                                    class="fa fa-check text-success check ms-2"></i></a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <section id="nav-area">
             <div class="container">
                 <div class="row nav-area-content">
@@ -71,22 +38,45 @@
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-12 col-12">
                         <div class="logo">
-                            <a href=""><img src="./assets/images/bridey-logo.jpg" alt=""></a>
+                            <a href=""><img src="./assets/images/Logo.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-4  d-lg-block d-none">
                         <div class="right-area">
-                            <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                            <div class="search"><i class="fa-solid fa-magnifying-glass icon" data-bs-toggle="modal"   data-bs-target="#exampleModal"></i></div>
                             <div><i class="fa-regular fa-user icon user-icon"></i></div>
+                            <span class="count-wishlist">0</span>
                             <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
-                            <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a></div>
+                            <span class="count-basket">0</span>
+                            <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
                         </div>
                         <div class="login-register d-none">
                             <ul>
-                              <li><a href="login.html">Login</a></li>
-                              <li><a href="register.html">Register</a></li>
+                                <li><a href="login.html">Login</a></li><span>/</span>
+                                <li><a href="register.html">Register</a></li>
+
                             </ul>
-                          </div>
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1><img src="./assets/images/search-icon.png">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form>
+                                        <input type="text">
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,10 +108,11 @@
                         <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
                     </div>
                     <div class="col-md-10 col-10 d-lg-none">
-                        <div class="left-area">
-                            <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                        <div class="right-area">
+                            <div class="search"><i class="fa-solid fa-magnifying-glass icon" data-bs-toggle="modal"   data-bs-target="#exampleModal"></i></div>
                             <div><i class="fa-regular fa-user icon"></i></div>
-                            <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a></div>
+                            <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,23 +122,21 @@
             <div class="container">
                 <div class="d-lg-block d-none">
                     <ul class="top-menu">
-                        <a href="home.html">
-                            <li class="active">Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About</li>
-                        </a>
-                        <a href="shop.html">
-                            <li>Shop</li>
-                        </a>
-                        <a href="blog.html">
-                            <li>Blog</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-
+                        <img class="decor-img d-none" src="./assets/images/decor2.png">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <img class="decor-img d-none" src="./assets/images/decor.png">
                     </ul>
+                    <div class="right-area d-none">
+                        <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                        <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
+                        <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -168,22 +157,27 @@
             </div>
         </section>
         <section id="sort-area">
-      
-            <div class="sort">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Sort By Latest</option>
-                    <option value="1">Sort By Popularity</option>
-                    <option value="2">Sort By Avarage Rating</option>
-                    <option value="3">Sort By Price:Low To High</option>
-                    <option value="4">Sort By Price:High to Low</option>
-                </select>
+            <div class="container">
+                <div class="sort">
+                    <div class="sort-result">
+                        <p>Showing <span>1–12</span> of <span>17</span>results</p>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Sort By Latest</option>
+                        <option value="1">Sort By Popularity</option>
+                        <option value="2">Sort By Avarage Rating</option>
+                        <option value="3">Sort By Price:Low To High</option>
+                        <option value="4">Sort By Price:High to Low</option>
+                    </select>
+                </div>
             </div>
+
         </section>
         <section id="wpb_wrapper">
             <div class="container container-shop">
                 <div class="row">
                     <div class="col-3">
-                      
+
                         <div class="products-variants">
                             <div class="dresses-variants">
                                 <h5>Categories</h5>
@@ -228,13 +222,13 @@
 
 
                             </div>
-                            <div class="product-price">
+                            <div class="product-area">
                                 <div class="price-title">
                                     <h3>FILTER BY PRICE</h3>
                                 </div>
                                 <div class="price-filter">
                                     <div class="card">
-                
+
                                         <div class="range-slider">
                                             <input type="range" class="min-price" value="100" min="10" max="500"
                                                 step="10" style="accent-color: #d8d8d8;">
@@ -242,14 +236,14 @@
                                                 step="10" style="accent-color: #d8d8d8;">
                                         </div>
                                         <div class="price-content">
-                
+
                                             <div style="color: gray;">
                                                 <p>Price:</p>
                                             </div>
                                             <div>
                                                 <p id="min-value">50</p>
                                             </div>
-                
+
                                             <div>
                                                 <p id="max-value">500</p>
                                             </div>
@@ -277,7 +271,7 @@
                                     </li>
                                 </ul>
                             </div>
-                         
+
                             <div class="widget-title-holder">
                                 <h5>Sizes</h5>
                                 <ul>
@@ -295,6 +289,7 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <div class="compositions">
                                 <h5>Composition</h5>
                                 <div class="widget-title-holder">
@@ -321,6 +316,27 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="widget-title-holder">
+                                <h5>Brands</h5>
+                                <ul>
+                                    <li>
+                                        <a>Greenery</a><span>(25)</span>
+                                    </li>
+                                    <li>
+                                        <a>Design Studio</a><span>(25)</span>
+                                    </li>
+                                    <li>
+                                        <a>Studi No-1</a><span>(25)</span>
+                                    </li>
+                                    <li>
+                                        <a>Design & Branding</a><span>(25)</span>
+                                    </li>
+                                    <li>
+                                        <a>Natural</a><span>(25)</span>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="banner">
                                 <img src="./assets/images/banner.webp">
                             </div>
@@ -329,7 +345,7 @@
                     </div>
                     <div class="col-9">
                         <div class="row">
-                            
+
                             <div class="col-lg-4 col-sm-12 col-md-6">
                                 <div class="cart">
                                     <div class="new">New</div>
@@ -507,7 +523,7 @@
                             </div>
                             <div class="col-lg-4 col-sm-12 col-12 col-md-12">
                                 <div class="logo">
-                                    <img src="./assets/images/bridey-logo.jpg">
+                                    <img src="./assets/images/Logo.svg">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12 col-12 col-md-12">
@@ -557,7 +573,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/common.js"></script>

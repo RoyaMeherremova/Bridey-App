@@ -3,6 +3,57 @@
     src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 }
 
+#wrapper {
+    margin-top: 2%;
+    background-size: cover;
+    .page_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        width: 406px;
+        text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+            color: #3e3d3d;
+            font-weight: 600;
+            font-size: 1.375rem;
+            font-family: auto;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0px !important;
+            gap: 4px;
+
+            li {
+                font-size: 14px;
+                margin: 4px;
+                margin: 0 !important;
+
+                span {
+                    color: #666;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #9faaa7;
+            }
+
+            i {
+                position: relative;
+                font-size: 11px;
+                bottom: 1px;
+            }
+        }
+    }
+}
+
 #blogss {
     padding-top: 10%;
 
@@ -66,7 +117,7 @@
                 background-image: linear-gradient(to right, #de9076 50%, #000 50%);
                 background-size: 200% 100%;
                 background-position: 100%;
-                -webkit-background-clip: text;
+                background-clip: text;
                 transition: background-position .4s ease;
                 display: inline-block;
                 -webkit-text-fill-color: transparent;
@@ -141,55 +192,15 @@
                     }
                 }
             }
-            a{
+
+            a {
                 text-decoration: none;
-                color:inherit;
+                color: inherit;
             }
 
 
         }
 
-
-
-        .single-post-date {
-            z-index: 1;
-            width: 65px;
-            height: 65px;
-            text-align: center;
-            border-radius: 100%;
-            display: inline-block;
-            position: absolute;
-            padding: 10px 16px;
-            background-color: #fff;
-            left: 12px;
-            top: 12px;
-
-            span {
-                font-family: inherit;
-
-                &:first-child {
-                    font-size: 17px;
-                    font-weight: 500;
-
-                    &::before {
-                        content: "";
-                        height: 1px;
-                        width: 44px;
-                        display: block;
-                        background-color: #c8c8c8;
-                        position: absolute;
-                        top: 39px;
-                        right: 8px;
-                        font-size: 20px;
-                    }
-                }
-
-                &:last-child {
-                    font-size: 12px;
-                    text-transform: uppercase;
-                }
-            }
-        }
     }
 
     .container-blog {
@@ -226,13 +237,36 @@
 
                 li {
                     cursor: pointer;
-                    padding: 8px 0;
+                    padding: 3px 0;
 
                     a {
                         &:hover {
                             color: #e9ac98;
                         }
+
+                        span {
+
+                            margin-left: 4px;
+                            color: #9faaa7;
+                        }
                     }
+                }
+            }
+        }
+        .tagcloud{
+            margin-top: 26px;
+            margin-left: 15px;
+            
+            a{
+                color: #626262;
+                font-size: 12px!important;
+                display: inline-block;
+                padding: 7px 15px;
+                background-color: #f6f6f6;
+                margin-bottom: 6px;
+                &:hover{
+                    color: #fff!important;
+                    background-color: #de9076;
                 }
             }
         }
@@ -298,11 +332,14 @@
 
         }
 
-     
+
     }
 
 }
 
+hr {
+    color: #b4afaf;
+}
 
 #search {
     .search-area {
@@ -374,6 +411,7 @@
     padding-bottom: 3%;
     margin-top: 69px;
     margin-bottom: 40px;
+
     .service-item {
         text-align: center;
 

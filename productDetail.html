@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/slicky/slick-1.8.1/slick/slick.css" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css'>
@@ -23,40 +24,6 @@
     <!-- Start Header -->
     <header>
         <div id="overlay" class="d-none"></div>
-        <section id="nav-up">
-            <div class="nav-container">
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
-                        aria-expanded="false">
-                        <i class="flag-united-kingdom flag m-0"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="Dropdown">
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i
-                                    class="fa fa-check text-success check ms-2"></i></a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider" />
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <section id="nav-area">
             <div class="container">
                 <div class="row nav-area-content">
@@ -73,23 +40,44 @@
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-12 col-12">
                         <div class="logo">
-                            <a href=""><img src="./assets/images/bridey-logo.jpg" alt=""></a>
+                            <a href=""><img src="./assets/images/Logo.svg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-4  d-lg-block d-none">
                         <div class="right-area">
-                            <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                            <div class="search"><i class="fa-solid fa-magnifying-glass icon" data-bs-toggle="modal"   data-bs-target="#exampleModal"></i></div>
                             <div><i class="fa-regular fa-user icon user-icon"></i></div>
+                            <span class="count-wishlist">0</span>
                             <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
+                            <span class="count-basket">0</span>
                             <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
                             </div>
                         </div>
                         <div class="login-register d-none">
                             <ul>
-                                <li><a href="login.html">Login</a></li>
+                                <li><a href="login.html">Login</a></li><span>/</span>
                                 <li><a href="register.html">Register</a></li>
 
                             </ul>
+                        </div>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1><img src="./assets/images/search-icon.png">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <form>
+                                        <input type="text">
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,8 +110,8 @@
                         <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
                     </div>
                     <div class="col-md-10 col-10 d-lg-none">
-                        <div class="left-area">
-                            <div class="search"><i class="fa-solid fa-magnifying-glass icon"></i></div>
+                        <div class="right-area">
+                            <div class="search"><i class="fa-solid fa-magnifying-glass icon" data-bs-toggle="modal"   data-bs-target="#exampleModal"></i></div>
                             <div><i class="fa-regular fa-user icon"></i></div>
                             <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
                             </div>
@@ -136,23 +124,21 @@
             <div class="container">
                 <div class="d-lg-block d-none">
                     <ul class="top-menu">
-                        <a href="home.html">
-                            <li class="active">Home</li>
-                        </a>
-                        <a href="about.html">
-                            <li>About</li>
-                        </a>
-                        <a href="shop.html">
-                            <li>Shop</li>
-                        </a>
-                        <a href="blog.html">
-                            <li>Blog</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-
+                        <img class="decor-img d-none" src="./assets/images/decor2.png">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <img class="decor-img d-none" src="./assets/images/decor.png">
                     </ul>
+                    <div class="right-area d-none">
+                        <div class="search"><i class="fa-solid fa-magnifying-glass icon"  data-bs-toggle="modal"   data-bs-target="#exampleModal"></i></div>
+                        <div><a href="wishlist.html"><i class="fa-regular fa-heart icon"></i></a></div>
+                        <div class="basket"><a href="basket.html"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -314,10 +300,23 @@
                                         </div>
                                     </div>
                                     <div id="tab-3" class="tab-content">
-                                        <h6 class="product-rewiev">1 REVIEW FOR WALL CLOCK</h6>
-                                        <p>Add a review</p>
+                                        <h6 class="product-rewiev">Comments (01)</h6>
+                                        <div class="user-area d-flex">
+                                            <div class="user-img">
+                                                <img src="./assets/images/team3.jpg">
+                                            </div>
+                                            <div class="user-info">
+                                                <h2 class="user-name">Donald Chavez</h2>
+                                                <span class="date">21 July 2021</span>
+                                                <p class="user-comment">Lorem ipsum dolor sit amet, consectetur adipisi
+                                                    elit.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="info-for-user">
+                                                <p>Add a review</p>
                                         <p>Your email address will not be published. Required fields are marked *</p>
-                                        <p>Your rating *</p>
+                                        <p style="margin-top: 22px;">Your rating *</p>
                                         <div class="product-rate">
                                             <i class="fa-solid fa-star" style="color: #b97a56;"></i>
                                             <i class="fa-solid fa-star" style="color: #b97a56;"></i>
@@ -325,7 +324,9 @@
                                             <i class="fa-regular fa-star" style="color: #b97a56;"></i>
                                             <i class="fa-regular fa-star" style="color: #b97a56;"></i>
                                         </div>
-                                        <p>Your review *</p>
+                                        <p style="margin-top: 22px;">Your review *</p> 
+                                        </div>
+                                   
                                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
                                         <div class="label">
@@ -458,7 +459,7 @@
                             </div>
                             <div class="col-lg-4 col-sm-12 col-12 col-md-12">
                                 <div class="logo">
-                                    <img src="./assets/images/bridey-logo.jpg">
+                                    <img src="./assets/images/Logo.svg">
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-12 col-12 col-md-12">

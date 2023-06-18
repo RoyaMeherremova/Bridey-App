@@ -1,3 +1,53 @@
+#wrapper {
+    margin-top: 2%;
+    background-size: cover;
+    .page_text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+         width: 406px;
+      text-align: center;
+
+        h1 {
+            text-transform: uppercase;
+            color: #3e3d3d;
+            font-weight: 600;
+            font-size: 1.375rem;
+            font-family: auto;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            padding: 0px !important;
+            gap: 4px;
+
+            li {
+                font-size: 14px;
+                margin: 4px;
+                margin: 0 !important;
+
+                span {
+                    color: #666;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: #9faaa7;
+            }
+
+            i {
+                position: relative;
+                font-size: 11px;
+                bottom: 1px;
+            }
+        }
+    }
+}
 #wishlist-table {
     .table-area {
         box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .1), 0 1px 1px 0 transparent, 0 1px 3px 0 rgba(0, 0, 0, .12) !important;
@@ -22,6 +72,9 @@
             }
         }
 
+    }
+    th{
+        padding: 16px;
     }
 
     tbody {
@@ -99,8 +152,8 @@
         justify-content: space-between;
         align-items: center;
 
-        .shop {
-            margin-left: 64px;
+        .shop {   
+             margin-left: 71px;
             margin-top: 2px;
             background-color: #e9ac98;
             border-color: #e9ac98;
@@ -125,4 +178,11 @@
 
     }
 
+}
+hr {
+    color: #b4afaf;
+}
+@font-face {
+    font-family: Marcellus;
+    src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 }

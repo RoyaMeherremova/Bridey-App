@@ -58,17 +58,6 @@ let userIconn = document.querySelector(".user-icon")
 userIconn.addEventListener("click", function () {
     document.querySelector(".login-register").classList.toggle("d-none")
 })
-
-
-
-//see login -register in click user-icon
-let userIcon = document.querySelector(".user-icon");
-let loginRegister = document.querySelector(".login-register");
-userIcon.addEventListener("click", function () {
-    loginRegister.classList.remove("d-none")
-    document.getElementById("overlay").style.display = "block"
-})
-
 //area kenarina toxunanda hemin hissenin silinmesi
 
 document.addEventListener("click", function (e) {
@@ -78,6 +67,51 @@ document.addEventListener("click", function (e) {
         }
     }
 })
+
+
+//see login -register in click user-icon
+let userIcon = document.querySelector(".user-icon-responsive");
+let loginRegister = document.querySelector(".login-register-responsive");
+userIcon.addEventListener("click", function () {
+    loginRegister.classList.remove("d-none")
+    document.getElementById("overlay").style.display = "block"
+})
+
+
+document.addEventListener("click", function (e) {
+    if (!!!e.target.closest(".user-icon-responsive")) {
+        if (!$(".login-register-responsive").hasClass("d-none")) {
+            $(".login-register-responsive").addClass("d-none")
+        }
+    }
+})
+
+
+
+//HAMBURGER
+
+
+$(document).ready(function () {
+    $(".hamburger").on("click", function () {
+      $("#overlay").removeClass("d-none");
+      $(".side-bar").css("transform", `translateX(${0}px)`);
+      $("body").css("overflow-y", 'hidden');
+    })
+  
+  
+    $(".close").on("click", function () {
+      $("#overlay").addClass("d-none");
+      $(".side-bar").css("transform", `translateX(${-239}px)`);
+      $("body").css("overflow", 'scroll');
+  
+    })
+    $("#overlay").on("click", function () {
+      $("#overlay").addClass("d-none");
+      $(".side-bar").css("transform", `translateX(${-239}px)`);
+      $("body").css("overflow", 'scroll');
+    })
+  });
+
 
 
 

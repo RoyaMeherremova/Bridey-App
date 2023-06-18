@@ -629,7 +629,7 @@ hr {
 #blogs .blog {
   position: relative;
   width: 420px;
-  height: 419px;
+  height: 384px;
   border: 1px solid #dfd7d7;
 }
 #blogs .blog img {
@@ -690,7 +690,7 @@ hr {
 }
 #blogs .blog:hover .blog-img {
   opacity: 1;
-  height: 419px;
+  height: 384px;
 }
 #blogs .blog:hover .blogg {
   color: white;
@@ -973,6 +973,35 @@ img.rot {
   color: #666;
 }
 
+.login-register-responsive {
+  position: absolute;
+  right: 16%;
+  top: 16%;
+  width: 138px;
+  height: 31px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  z-index: 100;
+}
+.login-register-responsive ul {
+  padding: 0px;
+  margin-left: 34px;
+  margin-top: 2px;
+  display: flex;
+  gap: 7px;
+}
+.login-register-responsive ul li {
+  list-style: none;
+}
+.login-register-responsive ul li a {
+  font-size: 17px;
+  color: #666;
+  text-decoration: none;
+}
+.login-register-responsive ul span {
+  color: #666;
+}
+
 .modal .modal-header img {
   width: 36px;
   margin-left: 10px;
@@ -994,6 +1023,49 @@ img.rot {
   margin-top: 6px;
 }
 
+.responsive-modal .modal-content {
+  height: 57px;
+  width: 100%;
+}
+.responsive-modal .modal-header {
+  border: none;
+}
+.responsive-modal .modal-header input {
+  width: 141%;
+  outline: none;
+  border: none;
+}
+
+#nav-down .count-wishlist {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ef3636;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: 39px;
+}
+#nav-down .count-basket {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ef3636;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 113px;
+}
 #nav-down .right-area {
   display: flex;
   gap: 30px;
@@ -1086,17 +1158,48 @@ img.rot {
 #responsive-nav-area {
   display: block;
   padding-top: 6%;
+  gap: 0px;
+  right: 0px;
+}
+#responsive-nav-area .count-wishlist {
+  width: 17px;
+  height: 19px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ef3636;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: 42px;
+}
+#responsive-nav-area .count-basket {
+  width: 17px;
+  height: 19px;
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ef3636;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 148px;
 }
 #responsive-nav-area .hamburger {
   position: relative;
-  left: 5%;
 }
 #responsive-nav-area .right-area {
   display: flex;
-  gap: 30px;
+  gap: 3px;
   float: right;
   position: relative;
-  right: 13%;
+  left: 10px;
 }
 #responsive-nav-area .right-area i {
   cursor: pointer;
@@ -1105,8 +1208,24 @@ img.rot {
 #responsive-nav-area .right-area .icon {
   color: #333;
 }
-#responsive-nav-area .right-area .basket {
+#responsive-nav-area .right-area .basket i {
   color: #e9ac98;
+}
+#responsive-nav-area .right-area .search {
+  position: relative;
+  left: 19px;
+}
+#responsive-nav-area .right-area .responsive-icon {
+  text-align: center;
+  height: 33px;
+  width: 48px;
+}
+#responsive-nav-area .right-area .responsive-icon i {
+  font-size: 17px;
+}
+#responsive-nav-area .right-area .heart-icon {
+  color: #333;
+  font-size: 18px !important;
 }
 
 #footer {
@@ -1598,6 +1717,7 @@ hr {
   width: 339px;
   height: 40px;
   padding-bottom: 6px;
+  outline: none;
 }
 #contact .elementor-column .elementor-widget-container .elementor-form .input-area {
   display: flex;
@@ -1612,6 +1732,7 @@ hr {
   height: 186px;
   font-size: 14px;
   padding: 14px 14px 14px 14px;
+  outline: none;
 }
 #contact .elementor-column .elementor-widget-container .elementor-form button {
   background-color: #E9AC98;
@@ -1629,6 +1750,9 @@ hr {
   margin-top: 20px;
 }
 
+#map {
+  margin-top: 60px;
+}
 #map iframe {
   width: 100%;
 }
@@ -3307,11 +3431,11 @@ hr {
   font-family: Marcellus;
   src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 }
-#wrapper {
+#wrapper-about {
   margin-top: 2%;
   background-size: cover;
 }
-#wrapper .page_text {
+#wrapper-about .page_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3320,33 +3444,33 @@ hr {
   width: 406px;
   text-align: center;
 }
-#wrapper .page_text h1 {
+#wrapper-about .page_text h1 {
   text-transform: uppercase;
   color: #3e3d3d;
   font-weight: 600;
   font-size: 1.375rem;
   font-family: auto;
 }
-#wrapper .page_text ul {
+#wrapper-about .page_text ul {
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0px !important;
   gap: 4px;
 }
-#wrapper .page_text ul li {
+#wrapper-about .page_text ul li {
   font-size: 14px;
   margin: 4px;
   margin: 0 !important;
 }
-#wrapper .page_text ul li span {
+#wrapper-about .page_text ul li span {
   color: #666;
 }
-#wrapper .page_text ul a {
+#wrapper-about .page_text ul a {
   text-decoration: none;
   color: #9faaa7;
 }
-#wrapper .page_text ul i {
+#wrapper-about .page_text ul i {
   position: relative;
   font-size: 11px;
   bottom: 1px;
@@ -3593,16 +3717,16 @@ hr {
 #block-carousel-about .owl-item .slider-content .descript {
   padding-top: 4%;
   color: #000;
-  font-size: 30px;
+  font-size: 21px;
   font-style: italic;
   line-height: 40px;
   text-align: center;
 }
 #block-carousel-about .owl-item .slider-content .user-img img {
-  width: 70px;
-  height: 70px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  margin-top: 15px;
+  margin-top: -11px;
 }
 #block-carousel-about .owl-item .title {
   width: 105px;
@@ -4075,10 +4199,11 @@ hr {
     padding: 13% !important;
   }
   #introducing .image {
+    text-align: center;
     width: 100% !important;
   }
   #introducing .image img {
-    width: 100% !important;
+    width: 93% !important;
   }
   #introducing .apImage {
     left: -25% !important;
@@ -4088,18 +4213,25 @@ hr {
   }
   #introducing .introducing-right {
     margin-left: 0% !important;
+    text-align: center;
   }
-  #introducing .introducing-right .introducing-image img {
-    width: 100% !important;
+  #introducing .introducing-right .btn-about {
+    margin-left: 107px;
   }
   #introducing .introducing-right p {
     font-size: 14px;
   }
-  #introducing .btn-about {
-    margin-top: 9px;
+  #introducing .introducing-right .introducing-image img {
+    width: 93% !important;
   }
   #products .cart .product-img {
-    width: 100%;
+    width: 313px;
+    margin-left: 32px;
+    height: 396px;
+  }
+  #products .cart .new {
+    top: 2%;
+    left: 12%;
   }
   .header-background-content {
     text-align: center !important;
@@ -4132,6 +4264,17 @@ hr {
   #about-us .btnn .btn-about {
     top: 23px;
     padding: 13px 20px 13px 20px;
+  }
+  #brides .bride-img {
+    text-align: center;
+    height: 127%;
+  }
+  #brides .bride-img img {
+    width: 76%;
+    height: 75%;
+  }
+  #brides .bride-img img:hover {
+    transform: none;
   }
   #brides-header {
     padding-top: 23% !important;
@@ -4190,6 +4333,9 @@ hr {
   }
   #blogs {
     padding-top: 15%;
+  }
+  #blogs .blog-slider {
+    max-width: 92%;
   }
   #blogs .blog {
     width: 100%;
@@ -4269,6 +4415,122 @@ hr {
   #footer .block-social {
     justify-content: center;
   }
+  #nav-down {
+    display: none;
+  }
+  #wrapper-about {
+    width: 100%;
+    height: 144px;
+  }
+  #wrapper-about .page_text {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+  }
+  #wrapper-about .page_text h1 {
+    position: relative;
+    top: 52px;
+    font-size: 22px;
+  }
+  #wrapper-about .page_text ul {
+    margin-top: 48px;
+  }
+  #story-content .block-ApImage {
+    width: 94%;
+    margin-left: 11px;
+  }
+  #story-content .block-ApImage img {
+    width: 100%;
+  }
+  #story-content .content-text {
+    margin-right: 36px;
+  }
+  #story-content .content-text .intro-text h4 {
+    font-size: 36px;
+  }
+  #story-content .content-text .image-form img {
+    display: none;
+  }
+  #story-content .content-text .text-about {
+    padding: 0% 6% 0% 6%;
+  }
+  #our-contact {
+    padding-top: 59%;
+  }
+  #our-contact .blok-ApRawHtml .contact-area {
+    width: 327px;
+    padding-bottom: 15%;
+  }
+  #our-contact .blok-ApRawHtml .contact-area p {
+    margin-right: 18px;
+  }
+  #our-contact .blok-ApRawHtml .contact-area .btn-hov {
+    left: 24%;
+  }
+  #title_block {
+    padding-top: 23px;
+  }
+  #title_block .sub-title h2 {
+    font-size: 36px;
+  }
+  #about-box .about-item {
+    height: 383px;
+  }
+  #about-box .about-item .top {
+    display: block !important;
+  }
+  #about-box .about-item .top .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 155px;
+  }
+  #about-box .about-item .top .title {
+    margin-left: 102px;
+    text-align: center;
+    margin-top: 11px;
+  }
+  #about-box .about-item .about-text p {
+    text-align: center;
+    line-height: 30px;
+  }
+  #about-box .about-item .btn-hov {
+    border: none;
+    background: none;
+    font-size: 12px;
+    bottom: 51px;
+    left: 96px;
+  }
+  #about-box .about-item .our-btn {
+    width: 157px;
+  }
+  #block-carousel-about .slide .owl-item {
+    height: 498px;
+  }
+  #block-carousel-about .slide .owl-item .slider-content {
+    width: 125px;
+    left: 13%;
+    top: 11%;
+  }
+  #block-carousel-about .slide .owl-item .slider-content .user-img img {
+    width: 75px;
+    height: 75px;
+    margin-left: 88%;
+  }
+  #block-carousel-about .slide .owl-item .slider-content .descript {
+    width: 303px;
+    text-align: center;
+    font-size: 25px;
+  }
+  #block-carousel-about .slide .owl-item .slider-content .title {
+    left: 80%;
+    font-size: 14px;
+  }
+  #block-carousel-about .slide .owl-item .slider-content .job {
+    margin-left: 100%;
+  }
+  #block-carousel-about .swiper-pagination {
+    bottom: 70px;
+  }
 }
 @media (min-width: 750px) and (max-width: 1200px) {
   #nav-area {
@@ -4276,6 +4538,12 @@ hr {
   }
   #nav-area .nav-container {
     border: none;
+  }
+  #responsive-nav-area .login-register-responsive {
+    right: 10%;
+  }
+  #responsive-nav-area .login-register-responsive ul {
+    margin-left: 6px;
   }
   #slider .mySwiper .swiper-wrapper .swiper-slide .slide .saleName {
     top: 24% !important;
@@ -4313,6 +4581,9 @@ hr {
   #slider .swiper:hover .swiper-button-next {
     width: 40px !important;
     height: 40px !important;
+  }
+  #introducing .apImage {
+    top: 11% !important;
   }
   #featured-products {
     border-top: 1px solid #f3eeee;
@@ -4377,6 +4648,86 @@ hr {
     padding-top: 7%;
   }
   #footer-top {
+    padding-top: 9%;
+    padding-bottom: 4%;
+  }
+  #story-content {
+    height: 561px;
+  }
+  #story-content .block-ApImage {
+    width: 100%;
+  }
+  #story-content .content-text {
+    width: 100%;
+  }
+  #story-content .content-text .intro-text h4 {
+    font-size: 48px;
+  }
+  #story-content .content-text .text-about {
+    padding: 0% 9% 0% 3%;
+  }
+  #story-content .content-text .image-form img {
+    display: none;
+  }
+  #our-contact {
+    padding-top: 8%;
+  }
+  #our-contact .blok-ApRawHtml .contact-area {
+    width: 98%;
+  }
+  #our-contact .blok-ApRawHtml .contact-area .btn-hov {
+    padding: 9px 30px 18px 30px;
+    font-size: 12px;
+    left: 37%;
+    margin-bottom: 11px;
+    margin-top: 44px;
+  }
+  #title_block .sub-title h2 {
+    font-size: 48px;
+  }
+  #about-box .about-item {
+    margin-bottom: 60px;
+  }
+  #block-carousel-about {
+    height: 465px;
+  }
+  #block-carousel-about .swiper-slide .owl-item .slider-content {
+    width: 100%;
+  }
+  #block-carousel-about .swiper-slide .owl-item .slider-content .user-img img {
+    width: 90px;
+    height: 90px;
+    margin-left: 0%;
+    margin-right: 25%;
+  }
+  #block-carousel-about .swiper-slide .owl-item .slider-content .descript {
+    width: 595px;
+  }
+  #block-carousel-about .swiper-slide .owl-item .slider-content .title {
+    left: 31%;
+  }
+  #footer-top-about {
     padding-top: 12%;
+  }
+  #footer-top-about .service-item .title {
+    font-weight: 400;
+    line-height: 43px;
+  }
+  #footer-bottom {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  #blogs .blog-slider {
+    margin-left: 37px;
+  }
+  #wrapper-about {
+    width: 100%;
+    height: 380px;
+  }
+  #wrapper-about .page_text {
+    position: relative;
+    top: 27%;
+    left: 21px;
   }
 }/*# sourceMappingURL=style.css.map */

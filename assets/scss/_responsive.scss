@@ -1,6 +1,7 @@
 //home-for phone
 @media (min-width:0) and (max-width:850px) {
 
+    //@HOME-RESPONSIVE-Phone
     #nav-area {
         border: none;
 
@@ -9,6 +10,7 @@
         }
     }
 
+  
 
     #slider {
         .swiper-slide {
@@ -73,9 +75,11 @@
     .line {
         display: none;
     }
+
     hr {
         color: #b4afaf;
     }
+
     #introducing {
 
         .intro-text {
@@ -97,10 +101,11 @@
         }
 
         .image {
+            text-align: center;
             width: 100% !important;
 
             img {
-                width: 100% !important;
+                width: 93% !important;
 
             }
         }
@@ -115,27 +120,35 @@
 
         .introducing-right {
             margin-left: 0% !important;
+            text-align: center;
 
-            .introducing-image {
-                img {
-                    width: 100% !important;
-                }
+            .btn-about {
+                margin-left: 107px;
             }
 
             p {
                 font-size: 14px;
             }
-        }
 
-        .btn-about {
-            margin-top: 9px;
+            .introducing-image {
+                img {
+                    width: 93% !important;
+                }
+            }
         }
     }
 
     #products {
         .cart {
             .product-img {
-                width: 100%;
+                width: 313px;
+                margin-left: 32px;
+                height: 396px;
+            }
+
+            .new {
+                top: 2%;
+                left: 12%;
             }
         }
 
@@ -187,6 +200,22 @@
         }
     }
 
+    #brides {
+        .bride-img {
+            text-align: center;
+            height: 127%;
+
+            img {
+                width: 76%;
+                height: 75%;
+
+                &:hover {
+                    transform: none;
+                }
+
+            }
+        }
+    }
 
     #brides-header {
         .header-background-content {
@@ -205,6 +234,7 @@
         padding-top: 23% !important;
         padding-bottom: 7% !important;
     }
+
 
     #latest-news {
         padding-top: 15%;
@@ -262,6 +292,10 @@
 
     #blogs {
         padding-top: 15%;
+
+        .blog-slider {
+            max-width: 92%;
+        }
 
         .blog {
             width: 100%;
@@ -373,10 +407,194 @@
 
 
 
+    //@ABOUT-RESPONSIVE-Phone
+
+    #nav-down {
+        display: none;
+    }
+
+    #wrapper-about {
+        width: 100%;
+        height: 144px;
+
+        .page_text {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+
+            h1 {
+                position: relative;
+                top: 52px;
+                font-size: 22px;
+            }
+
+            ul {
+                margin-top: 48px;
+            }
+        }
+    }
+
+    #story-content {
+        .block-ApImage {
+            width: 94%;
+            margin-left: 11px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .content-text {
+            margin-right: 36px;
+            .intro-text {
+                h4 {
+                    font-size: 36px;
+                }
+            }
+
+            .image-form {
+                img {
+                    display: none;
+                }
+            }
+            .text-about{
+                padding: 0% 6% 0% 6%;
+            }
+        }
+
+    }
+
+    #our-contact {
+        padding-top: 59%;
+
+        .blok-ApRawHtml {
+            .contact-area {
+                width: 327px;
+                padding-bottom: 15%;
+
+                p {
+                    margin-right: 18px;
+                }
+
+                .btn-hov {
+                    left: 24%;
+                }
+            }
+        }
+
+    }
+
+    #title_block {
+        padding-top: 23px;
+
+        .sub-title {
+            h2 {
+                font-size: 36px;
+            }
+        }
+
+    }
+
+    #about-box {
+        .about-item {
+            height: 383px;
+
+            .top {
+                display: block !important;
+
+                .icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-left: 155px;
+
+                }
+
+                .title {
+                    margin-left: 102px;
+                    text-align: center;
+                    margin-top: 11px;
+                }
+
+            }
+
+            .about-text {
+                p {
+                    text-align: center;
+                    line-height: 30px;
+                }
+
+            }
+
+            .btn-hov {
+                border: none;
+                background: none;
+                font-size: 12px;
+                bottom: 51px;
+                left: 96px;
+            }
+
+            .our-btn {
+                width: 157px;
+            }
+
+
+
+        }
+
+
+    }
+
+    #block-carousel-about {
+
+        .slide {
+            .owl-item {
+                height: 498px;
+
+                .slider-content {
+                    width: 125px;
+                    left: 13%;
+                    top: 11%;
+
+                    .user-img {
+                        img {
+                            width: 75px;
+                            height: 75px;
+                            margin-left: 88%;
+                        }
+                    }
+
+                    .descript {
+                        width: 303px;
+                        text-align: center;
+                        font-size: 25px;
+                    }
+
+                    .title {
+                        left: 80%;
+                        font-size: 14px;
+                    }
+
+                    .job {
+                        margin-left: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+        .swiper-pagination {
+            bottom: 70px;
+        }
+
+    }
+
 }
 
 //responsive for ipad
 @media (min-width:750px) and (max-width:1200px) {
+
+    //HOME-RESPONSIVE-TABLET
     #nav-area {
         border: none;
 
@@ -385,6 +603,15 @@
         }
     }
 
+    #responsive-nav-area {
+        .login-register-responsive {
+            right: 10%;
+
+            ul {
+                margin-left: 6px;
+            }
+        }
+    }
 
     #slider {
         .mySwiper {
@@ -454,6 +681,12 @@
         }
 
 
+    }
+
+    #introducing {
+        .apImage {
+            top: 11% !important;
+        }
     }
 
     #featured-products {
@@ -550,7 +783,142 @@
 
 
     #footer-top {
+        padding-top: 9%;
+        padding-bottom: 4%;
+    }
+
+
+    //About-RESPONSIVE-TABLET
+    #story-content {
+        height: 561px;
+
+        .block-ApImage {
+            width: 100%;
+        }
+
+        .content-text {
+            width: 100%;
+
+            .intro-text {
+                h4 {
+                    font-size: 48px;
+                }
+            }
+
+            .text-about {
+                padding: 0% 9% 0% 3%;
+            }
+
+            .image-form {
+                img {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
+    #our-contact {
+        padding-top: 8%;
+
+        .blok-ApRawHtml {
+            .contact-area {
+                width: 98%;
+
+                .btn-hov {
+                    padding: 9px 30px 18px 30px;
+                    font-size: 12px;
+                    left: 37%;
+                    
+    margin-bottom: 11px;
+    margin-top: 44px;
+
+                }
+            }
+        }
+
+
+    }
+
+    #title_block {
+        .sub-title {
+            h2 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    #about-box {
+        .about-item {
+
+            margin-bottom: 60px;
+        }
+    }
+
+    #block-carousel-about {
+        height: 465px;
+        .swiper-slide {
+            .owl-item {
+                .slider-content {
+                    width: 100%;
+                  
+                    .user-img {
+                        img {
+                            width: 90px;
+                            height: 90px;
+                            margin-left: 0%;
+    margin-right: 25%;
+
+                        }
+                    }
+                    .descript {
+                        width: 595px;
+                    }
+
+                    .title {
+                        left: 31%;
+                    }
+                }
+
+
+
+            }
+
+        }
+    }
+    #footer-top-about{
         padding-top: 12%;
+        .service-item{
+          
+            .title{
+                font-weight: 400;
+                line-height: 43px;
+            }
+        }
+    }
+    #footer-bottom{
+        display: none;
+    }
+
+
+}
+
+@media(min-width:768px) and (max-width:1200px) {
+    #blogs {
+        .blog-slider {
+            margin-left: 37px;
+        }
+    }
+
+    #wrapper-about {
+        width:100%;
+        height: 380px;
+
+        .page_text {
+            position: relative;
+            top: 27%;
+            left: 21px;
+        }
     }
 
 }

@@ -50,6 +50,7 @@
                     width: 339px;
                     height: 40px;
                     padding-bottom: 6px;
+                    outline: none;
                 }
 
                 .input-area {
@@ -66,6 +67,8 @@
                     height: 186px;
                     font-size: 14px;
                     padding: 14px 14px 14px 14px;
+                    outline: none;
+
                 }
 
                 button {
@@ -89,6 +92,7 @@
     }
 }
 #map{
+    margin-top: 60px;
     iframe{
         width: 100%;
     }

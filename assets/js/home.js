@@ -3,10 +3,10 @@
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   centeredSlides: true,
-  autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-  },
+  // autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -36,6 +36,13 @@ $('.blog-slider').slick({
       }
     },
     {
+      breakpoint: 920,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
@@ -48,28 +55,8 @@ $('.blog-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1
       }
-    }
+    },
 
   ]
 });
 
-$(document).ready(function () {
-  $(".hamburger").on("click", function () {
-    $("#overlay").removeClass("d-none");
-    $(".side-bar").css("transform", `translateX(${0}px)`);
-    $("body").css("overflow-y", 'hidden');
-  })
-
-
-  $(".close").on("click", function () {
-    $("#overlay").addClass("d-none");
-    $(".side-bar").css("transform", `translateX(${-239}px)`);
-    $("body").css("overflow", 'scroll');
-
-  })
-  $("#overlay").on("click", function () {
-    $("#overlay").addClass("d-none");
-    $(".side-bar").css("transform", `translateX(${-239}px)`);
-    $("body").css("overflow", 'scroll');
-  })
-});

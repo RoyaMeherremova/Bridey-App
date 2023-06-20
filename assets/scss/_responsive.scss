@@ -813,9 +813,10 @@
     }
 
     //WISHLIST-RESPONSIVE-PHONE
+
     #wrapper-wishlist {
         width: 100%;
-        height: 380px;
+        height: 144px;
 
         .page_text {
             width: 200px;
@@ -837,7 +838,7 @@
     #wishlist-table {
         margin-top: 52px;
         margin-bottom: 22px;
-    
+
         .table-area {
             overflow-x: scroll;
 
@@ -875,7 +876,7 @@
 
             .total-price {
                 font-size: 15px;
-                margin-right: 13px;
+                margin-right: 43px;
                 position: relative;
                 left: 9%;
             }
@@ -942,6 +943,7 @@
 
     }
 
+
     #wrapper-basket {
         width: 100%;
         height: 144px;
@@ -962,6 +964,7 @@
             }
         }
     }
+
 
     //LOGIN-RESPONSIVE-PHONE
 
@@ -998,8 +1001,190 @@
         }
     }
 
+    //PRODUCT-DETAIL-RESPONSIVE-PHONE
+    #product-detail {
 
+        .prod-thumb-left {
+            float: none;
+            right: 0px;
+
+            img {
+                width: 366px;
+            }
+        }
+
+        .prod-info-vertical {
+            .prod-info_ {
+                font-size: 14px;
+            }
+
+            .product-rate {
+                text-align: start;
+            }
+
+            .count-review {
+                span {
+                    font-size: 14px;
+                }
+
+            }
+
+            .category {
+                font-size: 14px;
+
+
+            }
+
+            .category-name {
+                font-size: 14px;
+
+            }
+
+            .socialShare {
+                h1 {
+                    font-size: 14px;
+                }
+
+                span a i {
+                    font-size: 14px;
+                }
+            }
+
+            .prod-info-tag {
+                .goods-tags-item {
+                    height: 16px;
+                }
+            }
+
+            .prod-price {
+                span {
+                    font-size: 19px;
+
+                }
+            }
+
+            .prod-info-extra {
+                width: 363px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .prod-size {
+                .style-select-item-size {
+                    span {
+                        min-width: 46px;
+                        height: 28px;
+                    }
+                }
+            }
+
+            .clearfix {
+                .number {
+                    input {
+                        height: 30px;
+                        width: 43px;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+            .add-button {
+                width: 116px;
+                height: 35px;
+            }
+
+            .prod-info-time {
+                height: 162px;
+
+                span {
+                    i {
+                        font-size: 35px;
+                    }
+                }
+
+                .info-a {
+                    .prod-info-time__right {
+                        line-height: 20px;
+                    }
+                }
+
+                .prod-info-text {
+                    bottom: 42%;
+                }
+            }
+
+            .complete-look-content {
+                .tab-info {
+                    #tab-3 {
+                        .user-area {
+                            .user-info {
+                                .user-name {
+                                    font-size: 14px !important;
+
+                                }
+                            }
+                        }
+
+                        .submit-button {
+                            button {
+                                width: 104px;
+                                height: 37px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .tabs {
+
+                        font-size: 14px;
+
+                        .tab-content {
+                            font-size: 14px;
+
+                        }
+
+                        .current {
+                            p {
+                                font-size: 14px;
+
+                            }
+
+                            .product-features {
+                                .name {
+                                    font-size: 14px;
+                                }
+
+                                .value {
+                                    font-size: 14px;
+                                }
+
+                            }
+
+
+                        }
+
+
+
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    #related-products {
+
+        padding-top: 28%;
+
+    }
 }
+
+
+
 
 
 //RESPONSIVE-TABLET
@@ -1453,9 +1638,6 @@
         }
     }
 
-    //BASKET-RESPONSIVE-Tablet
-
-
 
 
 }
@@ -1513,34 +1695,6 @@
         }
     }
 
-    #wrapper-basket {
-        width: 100%;
-        height: 380px;
 
-        .page_text {
-            position: relative;
-            top: 27%;
-            left: 21px;
-
-            h1 {
-                font-size: 27px;
-            }
-        }
-    }
-
-    #wrapper-wishlist {
-        width: 100%;
-        height: 311px;
-
-        .page_text {
-            position: relative;
-            top: 27%;
-            left: 21px;
-
-            h1 {
-                font-size: 27px;
-            }
-        }
-    }
 
 }

@@ -3,9 +3,10 @@
     src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 }
 
-#wrapper {
+#wrapper-blog {
     margin-top: 2%;
     background-size: cover;
+
     .page_text {
         display: flex;
         justify-content: center;
@@ -253,19 +254,21 @@
                 }
             }
         }
-        .tagcloud{
+
+        .tagcloud {
             margin-top: 26px;
             margin-left: 15px;
-            
-            a{
+
+            a {
                 color: #626262;
-                font-size: 12px!important;
+                font-size: 12px !important;
                 display: inline-block;
                 padding: 7px 15px;
                 background-color: #f6f6f6;
                 margin-bottom: 6px;
-                &:hover{
-                    color: #fff!important;
+
+                &:hover {
+                    color: #fff !important;
                     background-color: #de9076;
                 }
             }
@@ -333,6 +336,45 @@
         }
 
 
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 23px;
+
+        button {
+            background-color: #de9076;
+            border-color: #de9076;
+            color: #fff;
+            width: 31px;
+            height: 30px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 50%;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        .left-btn{
+            width: 24px;
+            height: 24px;
+            border: none;
+            margin-right: 2px;
+            i{
+                font-size: 11px;
+            }
+        }
+        .right-btn{
+            width: 24px;
+            height: 24px;
+            border: none;
+            margin-left: 10px;
+            i{
+                font-size: 11px;
+            }
+        }
     }
 
 }

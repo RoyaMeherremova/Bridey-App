@@ -26,3 +26,27 @@ inputElements.forEach((element) => {
 });
 
 validateRange(inputElements[0].value, inputElements[1].value);
+
+
+
+
+$(document).ready(function () {
+  $(".filter-toggle").on("click", function () {
+    $("#overlay").removeClass("d-none");
+    $(".products-variants-responsive").css("transform", `translateX(${0}px)`);
+    $("body").css("overflow-y", 'hidden');
+  })
+
+
+  $(".close").on("click", function () {
+    $("#overlay").addClass("d-none");
+    $(".products-variants-responsive").css("transform", `translateX(${-239}px)`);
+    $("body").css("overflow", 'scroll');
+
+  })
+  $("#overlay").on("click", function () {
+    $("#overlay").addClass("d-none");
+    $(".products-variants-responsive").css("transform", `translateX(${-239}px)`);
+    $("body").css("overflow", 'scroll');
+  })
+});

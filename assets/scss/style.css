@@ -1379,7 +1379,7 @@ img.rot {
 }
 
 #blogss {
-  padding-top: 10%;
+  padding-top: 3%;
 }
 #blogss .blog-cart {
   position: relative;
@@ -1491,6 +1491,58 @@ img.rot {
 }
 #blogss .right-side {
   padding-left: 8px;
+}
+#blogss .right-side .search-area {
+  float: right;
+  margin-right: 49px;
+}
+#blogss .right-side .widget-search {
+  width: 121%;
+}
+#blogss .right-side .widget-search .search-title {
+  font-family: Nunito;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+  position: relative;
+  left: 9px;
+  border-bottom: 1px solid #e7e7e7;
+}
+#blogss .right-side .wg-search-form {
+  position: relative;
+  margin-bottom: 8%;
+}
+#blogss .right-side .wg-search-form input {
+  outline: none;
+  position: relative;
+  left: 2%;
+  width: 121%;
+  height: 47px;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 16px 30px;
+  color: #a8a8a8;
+}
+#blogss .right-side .wg-search-form button {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  height: 47px;
+  width: 77px;
+  text-align: center;
+  background: black;
+  border: none;
+  left: 95%;
+}
+#blogss .right-side .wg-search-form button i {
+  color: #fff;
+  line-height: 56px;
+  font-size: 17px;
+  position: relative;
+  bottom: 3px;
+  left: 1px;
 }
 #blogss .right-side .widget {
   margin-left: 6%;
@@ -1626,60 +1678,6 @@ img.rot {
 
 hr {
   color: #b4afaf;
-}
-
-#search .search-area {
-  float: right;
-  padding-top: 24px;
-  margin-right: 49px;
-}
-#search .widget-search {
-  width: 121%;
-}
-#search .widget-search .search-title {
-  font-family: Nunito;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding-bottom: 13px;
-  position: relative;
-  left: 9px;
-  border-bottom: 1px solid #e7e7e7;
-}
-#search .wg-search-form {
-  position: relative;
-  margin-bottom: 8%;
-}
-#search .wg-search-form input {
-  outline: none;
-  position: relative;
-  left: 2%;
-  width: 121%;
-  height: 47px;
-  border: none;
-  background-color: #f3f3f3;
-  padding: 16px 30px;
-  color: #a8a8a8;
-}
-#search .wg-search-form button {
-  position: absolute;
-  top: 0;
-  padding: 0;
-  height: 47px;
-  width: 77px;
-  text-align: center;
-  background: black;
-  border: none;
-  left: 95%;
-}
-#search .wg-search-form button i {
-  color: #fff;
-  line-height: 56px;
-  font-size: 17px;
-  position: relative;
-  bottom: 3px;
-  left: 1px;
 }
 
 #footer-top-blog {
@@ -3001,11 +2999,11 @@ hr {
   font-family: Marcellus;
   src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 }
-#wrapper {
+#wrapper-blogDetail {
   margin-top: 2%;
   background-size: cover;
 }
-#wrapper .page_text {
+#wrapper-blogDetail .page_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3014,33 +3012,33 @@ hr {
   width: 406px;
   text-align: center;
 }
-#wrapper .page_text h1 {
+#wrapper-blogDetail .page_text h1 {
   text-transform: uppercase;
   color: #3e3d3d;
   font-weight: 600;
   font-size: 1.375rem;
   font-family: auto;
 }
-#wrapper .page_text ul {
+#wrapper-blogDetail .page_text ul {
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0px !important;
   gap: 4px;
 }
-#wrapper .page_text ul li {
+#wrapper-blogDetail .page_text ul li {
   font-size: 14px;
   margin: 4px;
   margin: 0 !important;
 }
-#wrapper .page_text ul li span {
+#wrapper-blogDetail .page_text ul li span {
   color: #666;
 }
-#wrapper .page_text ul a {
+#wrapper-blogDetail .page_text ul a {
   text-decoration: none;
   color: #9faaa7;
 }
-#wrapper .page_text ul i {
+#wrapper-blogDetail .page_text ul i {
   position: relative;
   font-size: 11px;
   bottom: 1px;
@@ -4121,6 +4119,32 @@ hr {
   margin-top: 28px;
 }
 
+#footer-top-about {
+  border: 1px solid #EDEDED;
+  background-color: white;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+#footer-top-about .service-item {
+  text-align: center;
+}
+#footer-top-about .service-item img {
+  display: block;
+  margin: auto;
+  padding-bottom: 20px;
+}
+#footer-top-about .service-item .title {
+  color: #000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+}
+#footer-top-about .service-item p {
+  margin-top: 1%;
+  font-size: 14px;
+  color: #4b5955;
+}
+
 hr {
   color: #b4afaf;
 }
@@ -4129,11 +4153,11 @@ hr {
   font-family: Great Vibes;
   src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 }
-#wrapper {
+#wrapper-register {
   margin-top: 2%;
   background-size: cover;
 }
-#wrapper .page_text {
+#wrapper-register .page_text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4142,33 +4166,33 @@ hr {
   width: 406px;
   text-align: center;
 }
-#wrapper .page_text h1 {
+#wrapper-register .page_text h1 {
   text-transform: uppercase;
   color: #3e3d3d;
   font-weight: 600;
   font-size: 1.375rem;
   font-family: auto;
 }
-#wrapper .page_text ul {
+#wrapper-register .page_text ul {
   list-style: none;
   display: flex;
   align-items: center;
   padding: 0px !important;
   gap: 4px;
 }
-#wrapper .page_text ul li {
+#wrapper-register .page_text ul li {
   font-size: 14px;
   margin: 4px;
   margin: 0 !important;
 }
-#wrapper .page_text ul li span {
+#wrapper-register .page_text ul li span {
   color: #666;
 }
-#wrapper .page_text ul a {
+#wrapper-register .page_text ul a {
   text-decoration: none;
   color: #9faaa7;
 }
-#wrapper .page_text ul i {
+#wrapper-register .page_text ul i {
   position: relative;
   font-size: 11px;
   bottom: 1px;
@@ -4177,20 +4201,20 @@ hr {
 #register {
   padding-top: 71px;
 }
-#register .form-login {
+#register .form-register {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#register .form-login-wrap {
+#register .form-register-wrap {
   padding: 50px;
   background: #f6f6f6;
   margin-bottom: 30px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#register .form-login-wrap .input-text,
-#register .form-login-wrap .password {
+#register .form-register-wrap .input-text,
+#register .form-register-wrap .password {
   display: block;
   width: 836px;
   padding: 12px;
@@ -4203,17 +4227,17 @@ hr {
   border-radius: 0;
   outline: 0;
 }
-#register .form-login-wrap .required {
+#register .form-register-wrap .required {
   margin-left: 5px;
   color: #e2401c;
 }
-#register .form-login-wrap h2 {
+#register .form-register-wrap h2 {
   font-family: Marcellus;
   font-weight: 400;
   font-style: normal;
   font-size: 27px;
 }
-#register .form-login-wrap button {
+#register .form-register-wrap button {
   border: none;
   border-radius: 0;
   background: 0 0;
@@ -4228,15 +4252,15 @@ hr {
   margin-top: 22px;
   margin-bottom: 32px;
 }
-#register .form-login-wrap label {
+#register .form-register-wrap label {
   color: #000;
   display: block;
   margin-bottom: 5px;
 }
-#register .form-login-wrap .area-password {
+#register .form-register-wrap .area-password {
   position: relative;
 }
-#register .form-login-wrap .area-password i {
+#register .form-register-wrap .area-password i {
   position: absolute;
   bottom: 16px;
   right: 23px;
@@ -4468,6 +4492,96 @@ hr {
   font-family: Marcellus;
   src: url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 }
+#wrapper-forgotPassword {
+  margin-top: 2%;
+  background-size: cover;
+}
+#wrapper-forgotPassword .page_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 406px;
+  text-align: center;
+}
+#wrapper-forgotPassword .page_text h1 {
+  text-transform: uppercase;
+  color: #3e3d3d;
+  font-weight: 600;
+  font-size: 1.375rem;
+  font-family: auto;
+}
+#wrapper-forgotPassword .page_text ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px !important;
+  gap: 4px;
+}
+#wrapper-forgotPassword .page_text ul li {
+  font-size: 14px;
+  margin: 4px;
+  margin: 0 !important;
+}
+#wrapper-forgotPassword .page_text ul li span {
+  color: #666;
+}
+#wrapper-forgotPassword .page_text ul a {
+  text-decoration: none;
+  color: #9faaa7;
+}
+#wrapper-forgotPassword .page_text ul i {
+  position: relative;
+  font-size: 11px;
+  bottom: 1px;
+}
+
+#ressetPassword .password-area {
+  margin-left: 156px;
+  margin-top: 66px;
+  margin-bottom: 35px;
+}
+#ressetPassword .password-area p {
+  color: #4b5955;
+  line-height: 1.8;
+}
+#ressetPassword .password-area form {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  width: 568px;
+}
+#ressetPassword .password-area form label {
+  color: #000;
+  display: block;
+}
+#ressetPassword .password-area form input {
+  width: 100%;
+  padding: 1%;
+  background-color: #fff;
+  color: #4b5955;
+  border-width: 0 0 1px;
+  border-style: solid;
+  border-color: #ccc;
+  font-weight: 400;
+  outline: 0;
+}
+#ressetPassword .password-area form input:focus {
+  border-color: #000;
+}
+#ressetPassword .password-area form button {
+  border: none;
+  border-radius: 0;
+  background: 0 0;
+  background-color: #de9076;
+  border-color: #de9076;
+  color: #fff;
+  cursor: pointer;
+  padding: 9px;
+  margin-top: 16px;
+}
+
 @media (min-width: 0) and (max-width: 850px) {
   #nav-area {
     border: none;
@@ -4870,6 +4984,7 @@ hr {
     bottom: 70px;
   }
   #footer-top-about {
+    margin-top: 11%;
     padding-top: 47px;
   }
   #footer-top-about .service-item {
@@ -4923,12 +5038,14 @@ hr {
   }
   #wrapper-blog {
     width: 100%;
-    height: 144px;
+    height: 311px;
   }
   #wrapper-blog .page_text {
-    width: 200px;
+    width: 233px;
     height: 100px;
     text-align: center;
+    position: relative;
+    top: 79px;
   }
   #wrapper-blog .page_text h1 {
     position: relative;
@@ -4938,12 +5055,28 @@ hr {
   #wrapper-blog .page_text ul {
     margin-top: 48px;
   }
-  #search {
-    display: none;
+  #blogss {
+    padding-top: 6%;
   }
   #blogss .blog-cart .post-thumb {
     width: 100%;
     height: 230px;
+  }
+  #blogss .right-side {
+    margin-top: 39px;
+  }
+  #blogss .right-side .widget {
+    margin-left: 5px;
+  }
+  #blogss .right-side .widget-content {
+    margin-left: 5px;
+  }
+  #blogss .right-side .list-posts {
+    left: 0%;
+    margin-left: 5px;
+  }
+  #blogss .right-side .tagcloud {
+    margin-left: 5px;
   }
   #footer-top-blog {
     padding-top: 47px;
@@ -5013,12 +5146,14 @@ hr {
   }
   #wrapper-wishlist {
     width: 100%;
-    height: 144px;
+    height: 311px;
   }
   #wrapper-wishlist .page_text {
     width: 200px;
     height: 100px;
     text-align: center;
+    position: relative;
+    top: 71px;
   }
   #wrapper-wishlist .page_text h1 {
     position: relative;
@@ -5098,12 +5233,14 @@ hr {
   }
   #wrapper-basket {
     width: 100%;
-    height: 144px;
+    height: 311px;
   }
   #wrapper-basket .page_text {
     width: 200px;
     height: 100px;
     text-align: center;
+    position: relative;
+    top: 71px;
   }
   #wrapper-basket .page_text h1 {
     position: relative;
@@ -5132,9 +5269,44 @@ hr {
   #wrapper-login .page_text ul {
     margin-top: 48px;
   }
+  #login .form-login-wrap {
+    padding: 19px;
+  }
+  #login .form-login-wrap .area-password input {
+    width: 332px !important;
+  }
   #login .form-login-wrap .input-text,
 #login .form-login-wrap .password {
+    width: 332px !important;
     width: 599px;
+  }
+  #wrapper-register {
+    width: 100%;
+    height: 311px;
+  }
+  #wrapper-register .page_text {
+    width: 233px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 79px;
+  }
+  #wrapper-register .page_text h1 {
+    position: relative;
+    top: 52px;
+    font-size: 22px;
+  }
+  #wrapper-register .page_text ul {
+    margin-top: 48px;
+  }
+  #register .form-register-wrap {
+    padding: 14px;
+  }
+  #register .form-register-wrap .input-text {
+    width: 332px !important;
+  }
+  #register .form-register-wrap .area-password input {
+    width: 332px !important;
   }
   #product-detail .prod-thumb-left {
     float: none;
@@ -5142,6 +5314,12 @@ hr {
   }
   #product-detail .prod-thumb-left img {
     width: 366px;
+  }
+  #product-detail .prod-thumb-left .prod-images {
+    gap: 8px;
+  }
+  #product-detail .prod-thumb-left .prod-images .item {
+    height: 152px;
   }
   #product-detail .prod-info-vertical .prod-info_ {
     font-size: 14px;
@@ -5191,6 +5369,7 @@ hr {
   }
   #product-detail .prod-info-vertical .prod-info-time {
     height: 162px;
+    width: 95%;
   }
   #product-detail .prod-info-vertical .prod-info-time span i {
     font-size: 35px;
@@ -5226,6 +5405,135 @@ hr {
   }
   #related-products {
     padding-top: 28%;
+  }
+  #related-products .prod-carousel {
+    max-width: 92%;
+  }
+  #related-products .prod-carousel .rel-product {
+    width: 100%;
+    margin-left: 39px;
+    margin-top: 23px;
+  }
+  #related-products .prod-carousel .rel-product img {
+    width: 100%;
+    height: 348px;
+  }
+  #related-products .prod-carousel .rel-product .py-3 {
+    padding-left: 3px;
+  }
+  #wrapper-error-page {
+    height: 548px;
+  }
+  #wrapper-error-page .page_text {
+    width: 100%;
+  }
+  #wrapper-error-page .error-img img {
+    width: 360px;
+    height: 214px;
+  }
+  #wrapper-error-page h1 {
+    font-size: 34px !important;
+  }
+  #wrapper-forgotPassword {
+    width: 100%;
+    height: 311px;
+  }
+  #wrapper-forgotPassword .page_text {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 71px;
+  }
+  #wrapper-forgotPassword .page_text h1 {
+    position: relative;
+    top: 52px;
+    font-size: 22px;
+  }
+  #wrapper-forgotPassword .page_text ul {
+    margin-top: 48px;
+  }
+  #ressetPassword {
+    font-size: 14px;
+  }
+  #ressetPassword .password-area {
+    margin-left: 10px;
+  }
+  #ressetPassword .password-area .lost_reset_password {
+    width: 339px;
+  }
+  #wrapper-blogDetail {
+    width: 100%;
+    height: 144px;
+  }
+  #wrapper-blogDetail .page_text {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    top: 30% !important;
+  }
+  #wrapper-blogDetail .page_text h1 {
+    position: relative;
+    top: 52px;
+    font-size: 22px;
+  }
+  #wrapper-blogDetail .page_text ul {
+    margin-top: 48px;
+  }
+  #site-content {
+    padding-top: 30px;
+  }
+  #site-content .post-thumbnail {
+    width: 360px;
+    height: 211px;
+    font-size: 14px;
+  }
+  #site-content .entry-header {
+    padding: 9px;
+  }
+  #site-content .entry-content {
+    padding: 6px;
+  }
+  #site-content .comment-list-wrap {
+    font-size: 14px;
+  }
+  #site-content .comment-body .comment-meta-right {
+    left: 11px;
+    bottom: 5px;
+  }
+  #site-content form .inputs-area {
+    display: block;
+  }
+  #site-content form .inputs-area input {
+    display: block;
+    padding: 11px;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+  #site-content form label {
+    position: relative;
+    bottom: 26px;
+    margin-left: 22px;
+    font-size: 13px;
+  }
+  #site-content .recent-posts {
+    padding: 14px 14px 0px 14px;
+  }
+  #site-content .widget_tag_cloud {
+    margin-bottom: 36px;
+  }
+  #site-content .related-blog img {
+    width: 365px;
+    height: 247px;
+  }
+  #site-content .categories-2 {
+    margin-left: 0px;
+  }
+  #site-content .widget_tag_cloud {
+    margin-left: 0px;
+  }
+  #site-content .recent-posts {
+    margin-left: 0px;
   }
 }
 @media (min-width: 750px) and (max-width: 1200px) {
@@ -5454,6 +5762,9 @@ hr {
     width: 100%;
     height: 230px;
   }
+  #blogss .blog-cart .right-side .tagcloud {
+    margin-left: 35px;
+  }
   #footer-top-contact {
     padding-top: 12%;
   }
@@ -5497,6 +5808,56 @@ hr {
     font-size: 20px;
     margin-right: 85px;
   }
+  #product-detail .prod-thumb-left {
+    margin-bottom: 5%;
+    left: 66px;
+  }
+  #product-detail .prod-thumb-left img {
+    width: 80%;
+    height: 720px;
+  }
+  #product-detail .prod-thumb-left .prod-images .item {
+    width: 180px;
+    height: 170px;
+  }
+  #related-products {
+    padding-top: 17%;
+  }
+  #login .form-login {
+    font-size: 18px;
+  }
+  #register .form-register {
+    font-size: 18px;
+  }
+  #site-content {
+    padding-top: 30px;
+    font-size: 14px;
+  }
+  #site-content .post-thumbnail {
+    width: 693px;
+    height: 447px;
+    font-size: 14px;
+  }
+  #site-content .related-posts-title .related-blog {
+    margin-bottom: 30px;
+  }
+  #site-content .related-posts-title .related-blog img {
+    width: 311px;
+    height: 220px;
+  }
+  #site-content .categories-2 {
+    margin-left: 0px;
+  }
+  #site-content .widget_tag_cloud {
+    margin-left: 0px;
+  }
+  #site-content .recent-posts {
+    margin-left: 0px;
+  }
+  #site-content .recent-posts ul li {
+    gap: 27px;
+    justify-content: start;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   #blogs .blog-slider {
@@ -5536,6 +5897,38 @@ hr {
     left: 21px;
   }
   #wrapper-contact .page_text h1 {
+    font-size: 27px;
+  }
+  #blogss .right-side {
+    padding-top: 48px;
+  }
+  #blogss .right-side .tagcloud {
+    margin-left: 35px;
+  }
+  #wrapper-blogDetail {
+    width: 100%;
+    height: 380px;
+  }
+  #wrapper-blogDetail .page_text {
+    position: relative;
+    width: 78%;
+    top: 7%;
+    left: 21px;
+  }
+  #wrapper-blogDetail .page_text h1 {
+    font-size: 27px;
+  }
+  #wrapper-forgotPassword {
+    width: 100%;
+    height: 380px;
+  }
+  #wrapper-forgotPassword .page_text {
+    position: relative;
+    width: 78%;
+    top: 28%;
+    left: 0px;
+  }
+  #wrapper-forgotPassword .page_text h1 {
     font-size: 27px;
   }
 }/*# sourceMappingURL=style.css.map */

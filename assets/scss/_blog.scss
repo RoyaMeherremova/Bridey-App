@@ -56,7 +56,7 @@
 }
 
 #blogss {
-    padding-top: 10%;
+    padding-top: 3%;
 
     .blog-cart {
         position: relative;
@@ -209,7 +209,66 @@
     }
 
     .right-side {
-
+        
+        .search-area {
+            float: right;
+            margin-right: 49px;
+    
+        }
+    
+        .widget-search {
+            width: 121%;
+    
+            .search-title {
+                font-family: Nunito;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: .2em;
+                text-transform: uppercase;
+                padding-bottom: 13px;
+                position: relative;
+                left: 9px;
+                border-bottom: 1px solid #e7e7e7;
+            }
+        }
+    
+        .wg-search-form {
+            position: relative;
+            margin-bottom: 8%;
+    
+            input {
+                outline: none;
+                position: relative;
+                left: 2%;
+                width: 121%;
+                height: 47px;
+                border: none;
+                background-color: #f3f3f3;
+                padding: 16px 30px;
+                color: #a8a8a8;
+            }
+    
+            button {
+                position: absolute;
+                top: 0;
+                padding: 0;
+                height: 47px;
+                width: 77px;
+                text-align: center;
+                background: black;
+                border: none;
+                left: 95%;
+    
+                i {
+                    color: #fff;
+                    line-height: 56px;
+                    font-size: 17px;
+                    position: relative;
+                    bottom: 3px;
+                    left: 1px;
+                }
+            }
+        }
         padding-left: 8px;
 
         .widget {
@@ -383,68 +442,7 @@ hr {
     color: #b4afaf;
 }
 
-#search {
-    .search-area {
-        float: right;
-        padding-top: 24px;
-        margin-right: 49px;
 
-    }
-
-    .widget-search {
-        width: 121%;
-
-        .search-title {
-            font-family: Nunito;
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: .2em;
-            text-transform: uppercase;
-            padding-bottom: 13px;
-            position: relative;
-            left: 9px;
-            border-bottom: 1px solid #e7e7e7;
-        }
-    }
-
-    .wg-search-form {
-        position: relative;
-        margin-bottom: 8%;
-
-        input {
-            outline: none;
-            position: relative;
-            left: 2%;
-            width: 121%;
-            height: 47px;
-            border: none;
-            background-color: #f3f3f3;
-            padding: 16px 30px;
-            color: #a8a8a8;
-        }
-
-        button {
-            position: absolute;
-            top: 0;
-            padding: 0;
-            height: 47px;
-            width: 77px;
-            text-align: center;
-            background: black;
-            border: none;
-            left: 95%;
-
-            i {
-                color: #fff;
-                line-height: 56px;
-                font-size: 17px;
-                position: relative;
-                bottom: 3px;
-                left: 1px;
-            }
-        }
-    }
-}
 
 
 #footer-top-blog {

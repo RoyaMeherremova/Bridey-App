@@ -68,20 +68,23 @@
 #shop-responsive-header {
 
     padding-top: 24px;
+
     .bridey-sorting {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left:10px;
+        margin-left: 10px;
 
         .filter-toggle {
             width: 57px;
             height: 21px;
             text-align: center;
-            i{
+
+            i {
                 color: #000;
             }
-            span{
+
+            span {
                 margin-left: 6px;
             }
         }
@@ -95,12 +98,40 @@
                 border-color: rgba(128, 128, 128, 0.2117647059);
             }
         }
-    
+
     }
 }
 
 .container-shop {
     width: 94% !important;
+}
+
+.pagination {
+    ul {
+        li {
+            &:hover {
+                display: block;
+            }
+        }
+    }
+
+    button {
+        background-color: #de9076;
+        border-color: #de9076;
+        color: #fff;
+        width: 31px;
+        height: 30px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50%;
+        margin-left: 8px;
+        cursor: pointer;
+
+        &:hover {
+            display: block !important;
+        }
+    }
 }
 
 .products-variants-responsive {
@@ -298,9 +329,10 @@
     }
 
     .widget-title-holder {
-        h5{
+        h5 {
             font-size: 16px;
         }
+
         ul {
             padding: 0;
             list-style: none;
@@ -324,8 +356,9 @@
             }
         }
     }
-    .close{
-        span{
+
+    .close {
+        span {
             position: relative;
             left: 77%;
             top: 1%;
@@ -337,6 +370,7 @@
 
 #sort-area {
     padding-top: 37px;
+
     .sort-result {
 
         p {
@@ -508,6 +542,8 @@ hr {
                     }
 
                     a {
+                        cursor: pointer;
+
                         .siluet {
                             display: inline;
 
@@ -530,6 +566,7 @@ hr {
                             left: 66px;
                             bottom: 41px;
                             width: 80%;
+
                         }
 
                         .suit-dress {
@@ -570,6 +607,8 @@ hr {
                     a {
                         padding-right: 5px;
                         font-family: 'Open Sans', sans-serif;
+
+
                     }
 
                     &:hover {
@@ -696,10 +735,12 @@ hr {
             font-family: auto;
         }
     }
-    .load-more{
+
+    .load-more {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .btn-more {
             position: absolute;
             display: flex;
@@ -736,6 +777,7 @@ hr {
             }
         }
     }
+
     .product-name {
         text-align: center;
 
@@ -769,6 +811,7 @@ hr {
 
 
 }
+
 #footer-top-shop {
     border: 1px solid #EDEDED;
     background-color: white;
